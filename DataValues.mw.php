@@ -61,29 +61,6 @@ $wgHooks['UnitTestsList'][] = function( array &$files ) {
 };
 
 /**
- * Hook for registering QUnit test cases.
- * @see https://www.mediawiki.org/wiki/Manual:Hooks/ResourceLoaderTestModules
- * @since 0.1
- *
- * @param array &$testModules
- * @param \ResourceLoader &$resourceLoader
- * @return boolean
- */
-$wgHooks['ResourceLoaderTestModules'][] = function ( array &$testModules, \ResourceLoader &$resourceLoader ) {
-	// Register DataValue QUnit tests. Take the predefined test definitions and make them
-	// suitable for registration with MediaWiki's resource loader.
-	$ownModules = include( __DIR__ . '/DataValues.tests.qunit.php' );
-	$ownModulesTemplate = array(
-		'localBasePath' => __DIR__,
-		'remoteExtPath' =>  'DataValues/DataValues',
-	);
-	foreach( $ownModules as $ownModuleName => $ownModule ) {
-		$testModules['qunit'][ $ownModuleName ] = $ownModule + $ownModulesTemplate;
-	}
-	return true;
-};
-
-/**
  * Called when generating the extensions credits, use this to change the tables headers.
  * @see https://www.mediawiki.org/wiki/Manual:Hooks/ExtensionTypes
  *
@@ -101,8 +78,3 @@ $wgHooks['ExtensionTypes'][] = function( array &$extensionTypes ) {
 	// @codeCoverageIgnoreEnd
 };
 
-// Resource Loader module registration
-$wgResourceModules = array_merge(
-	$wgResourceModules,
-	include( __DIR__ . '/DataValues.resources.mw.php' )
-);
