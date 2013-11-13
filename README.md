@@ -38,5 +38,5 @@ DataValues 1.0:
 
 Get the DataValues code, either via git, or some other means. Also get all dependencies.
 You can find a list of the dependencies in the "require" section of the composer.json file.
-Load all dependencies and the load the Diff library by including its entry point:
+Load all dependencies and the load the DataValues library by including its entry point:
 DataValues.php.
