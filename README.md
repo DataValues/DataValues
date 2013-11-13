@@ -1,4 +1,4 @@
-# Diff
+# DataValues
 
 DataValues is a small PHP library that aims to be a common foundation for representing "simple"
 values. Values such as numbers, geographical coordinates, strings and times.
