@@ -6,7 +6,7 @@
 		"datavalues",
 		"wikidata"
 	],
-	"homepage": "https://github.com/wikimedia/mediawiki-extensions-DataValues",
+	"homepage": "https://github.com/JeroenDeDauw/DataValues",
 	"license": "GPL-2.0+",
 	"authors": [
 		{
@@ -16,12 +16,6 @@
 			"role": "Developer"
 		}
 	],
-	"support": {
-		"issues": "https://bugzilla.wikimedia.org/",
-		"irc": "irc://irc.freenode.net/mediawiki",
-		"forum": "https://www.mediawiki.org/wiki/Extension_talk:DataValues",
-		"wiki": "https://www.mediawiki.org/wiki/Extension:DataValues"
-	},
 	"require": {
 		"php": ">=5.3.0"
 	},
