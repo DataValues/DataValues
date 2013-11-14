@@ -25,6 +25,9 @@
 	"autoload": {
 		"files" : [
 			"DataValues.php"
+		],
+		"classmap": [
+			"src"
 		]
 	}
 }

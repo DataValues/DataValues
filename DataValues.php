@@ -47,29 +47,9 @@ spl_autoload_register( function ( $className ) {
 		return;
 	}
 
-	$className = ltrim( $className, '\\' );
-	$fileName = '';
-	$namespace = '';
-
-	if ( $lastNsPos = strripos( $className, '\\') ) {
-		$namespace = substr( $className, 0, $lastNsPos );
-		$className = substr( $className, $lastNsPos + 1 );
-		$fileName  = str_replace( '\\', '/', $namespace ) . '/';
-	}
-
-	$fileName .= str_replace( '_', '/', $className ) . '.php';
-
-	$namespaceSegments = explode( '\\', $namespace );
-
-	if ( $namespaceSegments[0] === 'DataValues' ) {
-		if ( count( $namespaceSegments ) === 1 || $namespaceSegments[1] !== 'Tests' ) {
-			$fileName = __DIR__ . '/src/' . substr( $fileName, 11 );
-
-			// FIXME: this causes reads for lookups of files in the DataValues NS defined elsewhere
-			if ( is_readable( $fileName ) ) {
-				require_once $fileName;
-			}
-		}
+	if ( $className === 'DataValues\Tests\DataValueTest' ) {
+		require_once __DIR__ . '/tests/phpunit/DataValueTest.php';
+		return;
 	}
 } );
 

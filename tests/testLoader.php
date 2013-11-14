@@ -12,23 +12,8 @@
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 
-spl_autoload_register( function ( $className ) {
-	$className = ltrim( $className, '\\' );
-	$fileName = '';
-	$namespace = '';
+if ( !is_readable( __DIR__ . '/../vendor/autoload.php' ) ) {
+	die( 'You need to install this package with Composer before you can run the tests' );
+}
 
-	if ( $lastNsPos = strripos( $className, '\\') ) {
-		$namespace = substr( $className, 0, $lastNsPos );
-		$className = substr( $className, $lastNsPos + 1 );
-		$fileName  = str_replace( '\\', '/', $namespace ) . '/';
-	}
-
-	$fileName .= str_replace( '_', '/', $className ) . '.php';
-
-	$namespaceSegments = explode( '\\', $namespace );
-
-	if ( count( $namespaceSegments ) > 1 && $namespaceSegments[0] === 'DataValues' && $namespaceSegments[1] === 'Tests' ) {
-		$fileName = substr( $fileName, 17 );
-		require_once __DIR__ . '/phpunit/' . $fileName;
-	}
-} );
+require_once( __DIR__ . '/../vendor/autoload.php' );
