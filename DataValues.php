@@ -42,6 +42,8 @@ define( 'DATAVALUES_VERSION', '0.1 alpha' );
 define( 'DataValues_VERSION', DATAVALUES_VERSION );
 
 spl_autoload_register( function ( $className ) {
+	$className = ltrim( $className, '\\' );
+
 	if ( in_array( $className, array( 'Comparable', 'Copyable', 'Hashable', 'Immutable' ) ) ) {
 		require_once __DIR__ . '/interfaces/' . $className . '.php';
 		return;
