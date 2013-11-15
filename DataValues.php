@@ -34,7 +34,7 @@ if ( defined( 'DataValues_VERSION' ) ) {
 	return;
 }
 
-define( 'DATAVALUES_VERSION', '0.1 alpha' );
+define( 'DATAVALUES_VERSION', '0.1 rc' );
 
 /**
  * @deprecated
