@@ -53,6 +53,23 @@ spl_autoload_register( function ( $className ) {
 		require_once __DIR__ . '/tests/phpunit/DataValueTest.php';
 		return;
 	}
+
+	// The below is a temporary hack to not break classical MediaWiki-style loading.
+	// This can be removed once requiring Composer or other sane loading becomes acceptable.
+	$classes = array(
+		'DataValues\BooleanValue',
+		'DataValues\DataValue',
+		'DataValues\DataValueObject',
+		'DataValues\IllegalValueException',
+		'DataValues\NumberValue',
+		'DataValues\StringValue',
+		'DataValues\UnDeserializableValue',
+		'DataValues\UnknownValue',
+	);
+
+	if ( in_array( $className, $classes ) ) {
+		require_once __DIR__ . '/src/' . substr( $className, 11 ) . '.php';
+	}
 } );
 
 if ( defined( 'MEDIAWIKI' ) ) {
