@@ -11,9 +11,6 @@ use InvalidArgumentException;
  *
  * @since 0.1
  *
- * @file
- * @ingroup DataValue
- *
  * @licence GNU GPL v2+
  * @author Daniel Kinzler
  */
