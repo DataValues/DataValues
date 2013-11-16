@@ -75,3 +75,8 @@ Initial release with these features:
 	* UnDeserializableValue implementation
 	* UnknownValue implementation
 * Common interface definitions: Comparable, Copyable, Hashable, Immutable
+
+## Links
+
+* [DataValues on Packagist](https://packagist.org/packages/data-values/data-values)
+* [DataValues on Ohloh](https://www.ohloh.net/p/datavalues)
