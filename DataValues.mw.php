@@ -1,18 +1,15 @@
 <?php
 
 /**
- * MediaWiki setup for the DataValues extension.
+ * MediaWiki setup for the DataValues library.
  *
  * @since 0.1
- *
- * @file
- * @ingroup DataValues
  *
  * @licence GNU GPL v2+
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 
-global $wgExtensionCredits, $wgExtensionMessagesFiles, $wgHooks, $wgResourceModules;
+global $wgExtensionCredits, $wgExtensionMessagesFiles, $wgHooks;
 
 $wgExtensionCredits['datavalues'][] = array(
 	'path' => __DIR__,
