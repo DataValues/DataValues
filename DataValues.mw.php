@@ -24,10 +24,6 @@ $wgExtensionCredits['datavalues'][] = array(
 
 $wgExtensionMessagesFiles['DataValues'] = __DIR__ . '/DataValues.i18n.php';
 
-if ( defined( 'MW_PHPUNIT_TEST' ) ) {
-	require_once __DIR__ . '/tests/testLoader.php';
-}
-
 /**
  * Hook to add PHPUnit test cases.
  * @see https://www.mediawiki.org/wiki/Manual:Hooks/UnitTestsList
