@@ -3,7 +3,7 @@
 DataValues is a small PHP library that aims to be a common foundation for representing "simple"
 values. Values such as numbers, geographical coordinates, strings and times.
 
-[![Build Status](https://secure.travis-ci.org/JeroenDeDauw/DataValues.png?branch=master)](http://travis-ci.org/JeroenDeDauw/DataValues)
+[![Build Status](https://secure.travis-ci.org/DataValues/DataValues.png?branch=master)](http://travis-ci.org/DataValues/DataValues)
 
 On [Packagist](https://packagist.org/packages/data-values/data-values):
 [![Latest Stable Version](https://poser.pugx.org/data-values/data-values/version.png)](https://packagist.org/packages/data-values/data-values)
@@ -38,15 +38,6 @@ Get the DataValues code, either via git, or some other means. Also get all depen
 You can find a list of the dependencies in the "require" section of the composer.json file.
 Load all dependencies and the load the DataValues library by including its entry point:
 DataValues.php.
-
-## Related libraries
-
-The following libraries are build on top of DataValues and commonly used together with it:
-
-* [DataValuesInterfaces](https://github.com/JeroenDeDauw/DataValuesInterfaces) -
-defines interfaces for parsers, validators and formatters build on top of DataValues
-* [DataValuesCommon](https://github.com/JeroenDeDauw/DataValuesCommon) -
-contains common data values and implementations of the interfaces defined by DataValuesInterfaces
 
 ## Tests
 
