@@ -3,7 +3,6 @@
 namespace DataValues\Tests;
 
 use DataValues\DataValue;
-use DataValues\StringValue;
 use DataValues\UnDeserializableValue;
 use DataValues\UnknownValue;
 
