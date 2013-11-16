@@ -1,32 +1,10 @@
 <?php
 
 /**
- * Entry point for the DataValues extension.
- *
- * Documentation:	 		https://www.mediawiki.org/wiki/Extension:DataValues
- * Support					https://www.mediawiki.org/wiki/Extension_talk:DataValues
- * Source code:				https://gerrit.wikimedia.org/r/gitweb?p=mediawiki/extensions/DataValues.git
- *
- * @since 0.1
- *
- * @file
- * @ingroup DataValues
+ * Entry point for the DataValues library.
  *
  * @licence GNU GPL v2+
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
- */
-
-/**
- * Files belonging to the DataValues extension.
- *
- * @defgroup DataValues DataValues
- */
-
-/**
- * Tests part of the DataValues extension.
- *
- * @defgroup DataValuesTests DataValuesTests
- * @ingroup DataValues
  */
 
 if ( defined( 'DataValues_VERSION' ) ) {

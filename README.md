@@ -3,8 +3,6 @@
 DataValues is a small PHP library that aims to be a common foundation for representing "simple"
 values. Values such as numbers, geographical coordinates, strings and times.
 
-Recent changes can be found in the [release notes](docs/RELEASE-NOTES.md).
-
 [![Build Status](https://secure.travis-ci.org/JeroenDeDauw/DataValues.png?branch=master)](http://travis-ci.org/JeroenDeDauw/DataValues)
 
 On [Packagist](https://packagist.org/packages/data-values/data-values):
@@ -40,3 +38,40 @@ Get the DataValues code, either via git, or some other means. Also get all depen
 You can find a list of the dependencies in the "require" section of the composer.json file.
 Load all dependencies and the load the DataValues library by including its entry point:
 DataValues.php.
+
+## Related libraries
+
+The following libraries are build on top of DataValues and commonly used together with it:
+
+* [DataValuesInterfaces](https://github.com/JeroenDeDauw/DataValuesInterfaces)
+- defines interfaces for parsers, validators and formatters build on top of DataValues
+* [DataValuesCommon](https://github.com/JeroenDeDauw/DataValuesCommon)
+- contains common data values and implementations of the interfaces defined by DataValuesInterfaces
+
+## Tests
+
+This library comes with a set up PHPUnit tests that cover all non-trivial code. You can run these
+tests using the PHPUnit configuration file found in the root directory. The tests can also be run
+via TravisCI, as a TravisCI configuration file is also provided in the root directory.
+
+## Authors
+
+DataValues has been written primarily by [Jeroen De Dauw](https://www.mediawiki.org/wiki/User:Jeroen_De_Dauw),
+in part as [Wikimedia Germany](https://wikimedia.de) employee for the [Wikidata project](https://wikidata.org/).
+
+Contributions where also made by [several other awesome people]
+(https://www.ohloh.net/p/datavalues/contributors).
+
+## Release notes
+
+### 0.1 (2013-11-16)
+
+Initial release with these features:
+
+* DataValue interface
+	* BooleanValue implementation
+	* NumberValue implementation
+	* StringValue implementation
+	* UnDeserializableValue implementation
+	* UnknownValue implementation
+* Common interface definitions: Comparable, Copyable, Hashable, Immutable
