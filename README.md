@@ -43,10 +43,10 @@ DataValues.php.
 
 The following libraries are build on top of DataValues and commonly used together with it:
 
-* [DataValuesInterfaces](https://github.com/JeroenDeDauw/DataValuesInterfaces)
-- defines interfaces for parsers, validators and formatters build on top of DataValues
-* [DataValuesCommon](https://github.com/JeroenDeDauw/DataValuesCommon)
-- contains common data values and implementations of the interfaces defined by DataValuesInterfaces
+* [DataValuesInterfaces](https://github.com/JeroenDeDauw/DataValuesInterfaces) -
+defines interfaces for parsers, validators and formatters build on top of DataValues
+* [DataValuesCommon](https://github.com/JeroenDeDauw/DataValuesCommon) -
+contains common data values and implementations of the interfaces defined by DataValuesInterfaces
 
 ## Tests
 
