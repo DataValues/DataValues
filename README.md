@@ -3,6 +3,8 @@
 DataValues is a small PHP library that aims to be a common foundation for representing "simple"
 values. Values such as numbers, geographical coordinates, strings and times.
 
+It is part of the [DataValues set of libraries](https://github.com/DataValues).
+
 [![Build Status](https://secure.travis-ci.org/DataValues/DataValues.png?branch=master)](http://travis-ci.org/DataValues/DataValues)
 
 On [Packagist](https://packagist.org/packages/data-values/data-values):
