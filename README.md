@@ -59,6 +59,11 @@ Contributions where also made by [several other awesome people]
 
 ## Release notes
 
+### 0.2 (dev)
+
+* Removed support for running the tests via the MediaWiki test runner.
+* The test bootstrapping file now automatically does a composer install.
+
 ### 0.1 (2013-11-16)
 
 Initial release with these features:
