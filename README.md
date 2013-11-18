@@ -7,6 +7,7 @@ It is part of the [DataValues set of libraries](https://github.com/DataValues).
 
 [![Build Status](https://secure.travis-ci.org/DataValues/DataValues.png?branch=master)](http://travis-ci.org/DataValues/DataValues)
 [![Coverage Status](https://coveralls.io/repos/DataValues/DataValues/badge.png)](https://coveralls.io/r/DataValues/DataValues)
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/DataValues/DataValues/badges/quality-score.png?s=ba9364790e6b521277a3829ffb91e2c2e1b68c3c)](https://scrutinizer-ci.com/g/DataValues/DataValues/)
 
 On [Packagist](https://packagist.org/packages/data-values/data-values):
 [![Latest Stable Version](https://poser.pugx.org/data-values/data-values/version.png)](https://packagist.org/packages/data-values/data-values)
