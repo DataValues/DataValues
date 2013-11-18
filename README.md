@@ -6,7 +6,7 @@ values. Values such as numbers, geographical coordinates, strings and times.
 It is part of the [DataValues set of libraries](https://github.com/DataValues).
 
 [![Build Status](https://secure.travis-ci.org/DataValues/DataValues.png?branch=master)](http://travis-ci.org/DataValues/DataValues)
-[![Code Coverage](https://scrutinizer-ci.com/g/DataValues/DataValues/badges/coverage.png?s=56a1ea89df94c6d9b4223ba584d0d4556e1984ef)](https://scrutinizer-ci.com/g/DataValues/DataValues/)
+[![Coverage Status](https://coveralls.io/repos/DataValues/DataValues/badge.png)](https://coveralls.io/r/DataValues/DataValues)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/DataValues/DataValues/badges/quality-score.png?s=ba9364790e6b521277a3829ffb91e2c2e1b68c3c)](https://scrutinizer-ci.com/g/DataValues/DataValues/)
 
 On [Packagist](https://packagist.org/packages/data-values/data-values):
