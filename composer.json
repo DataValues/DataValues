@@ -27,7 +27,11 @@
 			"DataValues.php"
 		],
 		"classmap": [
-			"src"
-		]
+			"src/interfaces",
+			"tests/phpunit/DataValueTest.php"
+		],
+		"psr-0": {
+			"DataValues\\": "src/"
+		}
 	}
 }
