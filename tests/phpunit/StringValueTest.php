@@ -7,10 +7,7 @@ use DataValues\StringValue;
 /**
  * @covers DataValues\StringValue
  *
- * @file
  * @since 0.1
- *
- * @ingroup DataValue
  *
  * @group DataValue
  * @group DataValueExtensions
