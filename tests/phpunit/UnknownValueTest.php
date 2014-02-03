@@ -7,10 +7,7 @@ use DataValues\UnknownValue;
 /**
  * @covers DataValues\UnknownValue
  *
- * @file
  * @since 0.1
- *
- * @ingroup DataValue
  *
  * @group DataValue
  * @group DataValueExtensions

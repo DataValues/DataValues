@@ -7,10 +7,7 @@ use DataValues\BooleanValue;
 /**
  * @covers DataValues\BooleanValue
  *
- * @file
  * @since 0.1
- *
- * @ingroup DataValue
  *
  * @group DataValue
  * @group DataValueExtensions

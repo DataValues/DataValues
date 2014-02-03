@@ -7,10 +7,7 @@ use DataValues\DataValue;
 /**
  * Base for unit tests for DataValue implementing classes.
  *
- * @file
  * @since 0.1
- *
- * @ingroup DataValueTest
  *
  * @licence GNU GPL v2+
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
