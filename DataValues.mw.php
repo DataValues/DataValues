@@ -20,6 +20,7 @@ $GLOBALS['wgExtensionCredits']['datavalues'][] = array(
 	'descriptionmsg' => 'datavalues-desc',
 );
 
+$GLOBALS['wgMessagesDirs']['DataValues'] = __DIR__ . '/i18n';
 $GLOBALS['wgExtensionMessagesFiles']['DataValues'] = __DIR__ . '/DataValues.i18n.php';
 
 /**
