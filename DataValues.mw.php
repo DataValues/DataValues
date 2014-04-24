@@ -21,7 +21,6 @@ $GLOBALS['wgExtensionCredits']['datavalues'][] = array(
 );
 
 $GLOBALS['wgMessagesDirs']['DataValues'] = __DIR__ . '/i18n';
-$GLOBALS['wgExtensionMessagesFiles']['DataValues'] = __DIR__ . '/DataValues.i18n.php';
 
 /**
  * Called when generating the extensions credits, use this to change the tables headers.
