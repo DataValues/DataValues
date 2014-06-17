@@ -18,14 +18,14 @@ class NumberValue extends DataValueObject {
 	/**
 	 * @since 0.1
 	 *
-	 * @var int|float
+	 * @var number
 	 */
 	protected $value;
 
 	/**
 	 * @since 0.1
 	 *
-	 * @param int|float $value
+	 * @param number $value
 	 *
 	 * @throws IllegalValueException
 	 */
@@ -42,7 +42,7 @@ class NumberValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @return int|float
+	 * @return string
 	 */
 	public function serialize() {
 		return serialize( $this->value );
@@ -77,7 +77,7 @@ class NumberValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @return string|float|int
+	 * @return number
 	 */
 	public function getSortKey() {
 		return $this->value;
@@ -89,7 +89,7 @@ class NumberValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @return int|float
+	 * @return number
 	 */
 	public function getValue() {
 		return $this->value;
@@ -101,7 +101,7 @@ class NumberValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @param mixed $data
+	 * @param number $data
 	 *
 	 * @return NumberValue
 	 */

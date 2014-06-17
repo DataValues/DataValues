@@ -74,7 +74,7 @@ class StringValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @return string|float|int
+	 * @return string
 	 */
 	public function getSortKey() {
 		return $this->value;
@@ -98,7 +98,7 @@ class StringValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @param mixed $data
+	 * @param string $data
 	 *
 	 * @return StringValue
 	 */
