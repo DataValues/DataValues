@@ -158,7 +158,7 @@ class UnDeserializableValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @return string|float|int
+	 * @return int Always 0 in this implementation.
 	 */
 	public function getSortKey() {
 		return 0;

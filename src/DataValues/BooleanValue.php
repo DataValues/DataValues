@@ -74,7 +74,7 @@ class BooleanValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @return string|float|int
+	 * @return int 0 for false, 1 for true.
 	 */
 	public function getSortKey() {
 		return $this->value ? 1 : 0;
@@ -98,7 +98,7 @@ class BooleanValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @param mixed $data
+	 * @param bool $data
 	 *
 	 * @return BooleanValue
 	 */
