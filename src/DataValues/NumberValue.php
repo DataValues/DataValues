@@ -16,22 +16,18 @@ namespace DataValues;
 class NumberValue extends DataValueObject {
 
 	/**
-	 * @since 0.1
-	 *
-	 * @var number
+	 * @var int|float
 	 */
 	protected $value;
 
 	/**
-	 * @since 0.1
-	 *
-	 * @param number $value
+	 * @param int|float $value
 	 *
 	 * @throws IllegalValueException
 	 */
 	public function __construct( $value ) {
 		if ( !is_int( $value ) && !is_float( $value ) ) {
-			throw new IllegalValueException( 'Can only construct NumberValue from floats or integers' );
+			throw new IllegalValueException( 'Can only construct NumberValue from floats or integers.' );
 		}
 
 		$this->value = $value;
@@ -39,8 +35,6 @@ class NumberValue extends DataValueObject {
 
 	/**
 	 * @see Serializable::serialize
-	 *
-	 * @since 0.1
 	 *
 	 * @return string
 	 */
@@ -50,8 +44,6 @@ class NumberValue extends DataValueObject {
 
 	/**
 	 * @see Serializable::unserialize
-	 *
-	 * @since 0.1
 	 *
 	 * @param string $value
 	 *
@@ -64,8 +56,6 @@ class NumberValue extends DataValueObject {
 	/**
 	 * @see DataValue::getType
 	 *
-	 * @since 0.1
-	 *
 	 * @return string
 	 */
 	public static function getType() {
@@ -75,9 +65,7 @@ class NumberValue extends DataValueObject {
 	/**
 	 * @see DataValue::getSortKey
 	 *
-	 * @since 0.1
-	 *
-	 * @return number
+	 * @return int|float
 	 */
 	public function getSortKey() {
 		return $this->value;
@@ -87,9 +75,7 @@ class NumberValue extends DataValueObject {
 	 * Returns the number.
 	 * @see DataValue::getValue
 	 *
-	 * @since 0.1
-	 *
-	 * @return number
+	 * @return int|float
 	 */
 	public function getValue() {
 		return $this->value;
@@ -101,7 +87,7 @@ class NumberValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @param number $data
+	 * @param int|float $data
 	 *
 	 * @return NumberValue
 	 */
