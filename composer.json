@@ -4,6 +4,7 @@
 	"description": "Defines the DataValue interface and some trivial implementations",
 	"keywords": [
 		"datavalues",
+		"wikibase",
 		"wikidata"
 	],
 	"homepage": "https://github.com/DataValues/DataValues",
@@ -32,6 +33,11 @@
 		],
 		"psr-0": {
 			"DataValues\\": "src/"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
 		}
 	}
 }
