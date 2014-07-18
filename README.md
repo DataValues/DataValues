@@ -61,7 +61,7 @@ Contributions where also made by [several other awesome people]
 
 ### 1.0 (dev)
 
-* 
+*
 
 ### 0.1.1 (2013-11-22)
 
