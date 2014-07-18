@@ -12,7 +12,7 @@ if ( defined( 'DataValues_VERSION' ) ) {
 	return;
 }
 
-define( 'DATAVALUES_VERSION', '0.1.1' );
+define( 'DATAVALUES_VERSION', '1.0 alpha' );
 
 /**
  * @deprecated

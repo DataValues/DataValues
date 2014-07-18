@@ -59,6 +59,10 @@ Contributions where also made by [several other awesome people]
 
 ## Release notes
 
+### 1.0 (dev)
+
+* 
+
 ### 0.1.1 (2013-11-22)
 
 * Removed support for running the tests via the MediaWiki test runner.
