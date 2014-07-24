@@ -61,7 +61,13 @@ Contributions where also made by [several other awesome people]
 
 ### 1.0 (dev)
 
-*
+* The CI now ensures compatibility with PHP 5.6 and HHVM
+* A lot of type hints where improved
+* Protected methods and fields where changed to private
+* The test bootstrap no longer executes `composer update`
+* The test bootstrap now sets PHP strict mode
+* The contract of the `Hashable::getHash` method was updated
+* The MediaWiki internationalization support has been migrated to the JSON based version
 
 ### 0.1.1 (2013-11-22)
 

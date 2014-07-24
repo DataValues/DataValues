@@ -7,8 +7,6 @@ use DataValues\NumberValue;
 /**
  * @covers DataValues\NumberValue
  *
- * @since 0.1
- *
  * @group DataValue
  * @group DataValueExtensions
  *
@@ -19,8 +17,6 @@ class NumberValueTest extends DataValueTest {
 
 	/**
 	 * @see DataValueTest::getClass
-	 *
-	 * @since 0.1
 	 *
 	 * @return string
 	 */

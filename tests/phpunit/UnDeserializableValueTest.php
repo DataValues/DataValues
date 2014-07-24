@@ -9,8 +9,6 @@ use DataValues\UnknownValue;
 /**
  * @covers DataValues\UnDeserializableValue
  *
- * @since 0.1
- *
  * @group DataValue
  * @group DataValueExtensions
  *
@@ -21,8 +19,6 @@ class UnDeserializableValueTest extends DataValueTest {
 
 	/**
 	 * @see DataValueTest::getClass
-	 *
-	 * @since 0.1
 	 *
 	 * @return string
 	 */

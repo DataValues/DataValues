@@ -9,7 +9,7 @@
 
 if ( defined( 'DataValues_VERSION' ) ) {
 	// Do not initialize more than once.
-	return;
+	return 1;
 }
 
 define( 'DATAVALUES_VERSION', '1.0 alpha' );

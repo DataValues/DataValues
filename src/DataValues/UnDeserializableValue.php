@@ -19,17 +19,17 @@ class UnDeserializableValue extends DataValueObject {
 	/**
 	 * @var mixed
 	 */
-	protected $data;
+	private $data;
 
 	/**
 	 * @var string
 	 */
-	protected $type;
+	private $type;
 
 	/**
 	 * @var string
 	 */
-	protected $error;
+	private $error;
 
 	/**
 	 * @since 0.1

@@ -14,15 +14,11 @@ namespace DataValues;
 class UnknownValue extends DataValueObject {
 
 	/**
-	 * @since 0.1
-	 *
 	 * @var mixed
 	 */
-	protected $value;
+	private $value;
 
 	/**
-	 * @since 0.1
-	 *
 	 * @param mixed $value
 	 */
 	public function __construct( $value ) {

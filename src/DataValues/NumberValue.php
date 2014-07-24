@@ -18,7 +18,7 @@ class NumberValue extends DataValueObject {
 	/**
 	 * @var int|float
 	 */
-	protected $value;
+	private $value;
 
 	/**
 	 * @param int|float $value

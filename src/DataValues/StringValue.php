@@ -13,15 +13,11 @@ namespace DataValues;
 class StringValue extends DataValueObject {
 
 	/**
-	 * @since 0.1
-	 *
 	 * @var string
 	 */
-	protected $value;
+	private $value;
 
 	/**
-	 * @since 0.1
-	 *
 	 * @param string $value
 	 *
 	 * @throws IllegalValueException

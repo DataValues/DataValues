@@ -12,10 +12,7 @@ namespace DataValues;
  */
 class BooleanValue extends DataValueObject {
 
-	/**
-	 * @var bool
-	 */
-	protected $value;
+	private $value;
 
 	/**
 	 * @since 0.1
