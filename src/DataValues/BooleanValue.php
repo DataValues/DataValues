@@ -13,16 +13,14 @@ namespace DataValues;
 class BooleanValue extends DataValueObject {
 
 	/**
-	 * @since 0.1
-	 *
-	 * @var boolean
+	 * @var bool
 	 */
 	protected $value;
 
 	/**
 	 * @since 0.1
 	 *
-	 * @param string $value
+	 * @param bool $value
 	 *
 	 * @throws IllegalValueException
 	 */
@@ -39,7 +37,7 @@ class BooleanValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @return string
+	 * @return string '0' for false, '1' for true.
 	 */
 	public function serialize() {
 		return $this->value ? '1' : '0';
@@ -50,18 +48,16 @@ class BooleanValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @param string $value
+	 * @param string $value '0' for false, '1' for true.
 	 *
 	 * @return BooleanValue
 	 */
 	public function unserialize( $value ) {
-		$this->__construct( $value === '1' );
+		$this->value = $value === '1';
 	}
 
 	/**
 	 * @see DataValue::getType
-	 *
-	 * @since 0.1
 	 *
 	 * @return string
 	 */
@@ -71,8 +67,6 @@ class BooleanValue extends DataValueObject {
 
 	/**
 	 * @see DataValue::getSortKey
-	 *
-	 * @since 0.1
 	 *
 	 * @return int 0 for false, 1 for true.
 	 */
@@ -84,9 +78,7 @@ class BooleanValue extends DataValueObject {
 	 * Returns the boolean.
 	 * @see DataValue::getValue
 	 *
-	 * @since 0.1
-	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function getValue() {
 		return $this->value;
