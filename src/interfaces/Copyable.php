@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Interface for objects that have a getHash method.
+ * Interface for objects that have a getCopy method.
  *
  * @since 0.1
  *
