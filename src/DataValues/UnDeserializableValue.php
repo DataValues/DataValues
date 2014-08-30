@@ -183,19 +183,20 @@ class UnDeserializableValue extends DataValueObject {
 	 *
 	 * @param mixed $value
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function equals( $value ) {
-		if ( !is_object( $value ) ) {
+		if ( $value === $this ) {
+			return true;
+		}
+
+		if ( !( $value instanceof self ) ) {
 			return false;
 		}
 
-		return $value === $this ||
-			( $value instanceof  UnDeserializableValue
-				&& $value->data === $this->data
-				&& $value->type === $this->type
-				&& $value->error === $this->error
-			);
+		return $value->data === $this->data
+			&& $value->type === $this->type
+			&& $value->error === $this->error;
 	}
 
 }
