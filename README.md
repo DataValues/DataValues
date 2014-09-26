@@ -59,7 +59,7 @@ Contributions where also made by [several other awesome people]
 
 ## Release notes
 
-### 1.0 (dev)
+### 1.0 (2014-09-26)
 
 * The CI now ensures compatibility with PHP 5.6 and HHVM
 * A lot of type hints where improved
