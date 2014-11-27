@@ -36,7 +36,6 @@ class BooleanValueTest extends DataValueTest {
 	public function invalidConstructorArgumentsProvider() {
 		$argLists = array();
 
-		$argLists[] = array( );
 		$argLists[] = array( 42 );
 		$argLists[] = array( array() );
 		$argLists[] = array( '1' );

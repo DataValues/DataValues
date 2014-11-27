@@ -37,16 +37,17 @@ class UnknownValueTest extends DataValueTest {
 		$argLists[] = array( '' );
 		$argLists[] = array( ' foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz ' );
 
-
 		return $argLists;
 	}
 
 	public function invalidConstructorArgumentsProvider() {
-		$argLists = array();
+		return array(
+			array(),
+		);
+	}
 
-		$argLists[] = array();
-
-		return $argLists;
+	public function testConstructorWithInvalidArguments() {
+		$this->markTestSkipped( 'UnknownValue has no invalid arguments' );
 	}
 
 	/**
