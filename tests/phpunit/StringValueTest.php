@@ -31,14 +31,12 @@ class StringValueTest extends DataValueTest {
 		$argLists[] = array( '' );
 		$argLists[] = array( ' foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz ' );
 
-
 		return $argLists;
 	}
 
 	public function invalidConstructorArgumentsProvider() {
 		$argLists = array();
 
-		$argLists[] = array( );
 		$argLists[] = array( 42 );
 		$argLists[] = array( array() );
 		$argLists[] = array( false );
