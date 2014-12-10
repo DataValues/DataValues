@@ -22,7 +22,7 @@ class UnDeserializableValue extends DataValueObject {
 	private $data;
 
 	/**
-	 * @var string
+	 * @var string|null
 	 */
 	private $type;
 
@@ -34,20 +34,19 @@ class UnDeserializableValue extends DataValueObject {
 	/**
 	 * @since 0.1
 	 *
-	 * @param string $type The originally intended type
 	 * @param mixed $data The raw data structure
+	 * @param string|null $type The originally intended type
 	 * @param string $error The error that occurred when processing the original data structure.
 	 *
 	 * @throws InvalidArgumentException
-	 * @internal param mixed $value
 	 */
 	public function __construct( $data, $type, $error ) {
-		if ( !is_null( $type ) && !is_string( $type ) ) {
-			throw new InvalidArgumentException( '$type must be string or null' );
-		}
-
 		if ( is_object( $data ) ) {
 			throw new InvalidArgumentException( '$data must not be an object' );
+		}
+
+		if ( !is_string( $type ) && !is_null( $type ) ) {
+			throw new InvalidArgumentException( '$type must be a string or null' );
 		}
 
 		if ( !is_string( $error ) ) {
@@ -79,8 +78,6 @@ class UnDeserializableValue extends DataValueObject {
 	 * @since 0.1
 	 *
 	 * @param string $value
-	 *
-	 * @return StringValue
 	 */
 	public function unserialize( $value ) {
 		list( $type, $data, $error ) = unserialize( $value );
@@ -113,9 +110,9 @@ class UnDeserializableValue extends DataValueObject {
 	 */
 	public function toArray() {
 		return array(
-			'value' => $this->getArrayValue(),
-			'type' => $this->getTargetType(),
-			'error' => $this->getReason(),
+			'value' => $this->data,
+			'type' => $this->type,
+			'error' => $this->error,
 		);
 	}
 
@@ -135,7 +132,7 @@ class UnDeserializableValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @return string
+	 * @return string|null
 	 */
 	public function getTargetType() {
 		return $this->type;

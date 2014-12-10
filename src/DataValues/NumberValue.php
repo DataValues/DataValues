@@ -46,8 +46,6 @@ class NumberValue extends DataValueObject {
 	 * @see Serializable::unserialize
 	 *
 	 * @param string $value
-	 *
-	 * @return NumberValue
 	 */
 	public function unserialize( $value ) {
 		$this->__construct( unserialize( $value ) );
