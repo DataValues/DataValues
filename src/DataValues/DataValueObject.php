@@ -28,13 +28,18 @@ abstract class DataValueObject implements DataValue {
 	 *
 	 * @since 0.1
 	 *
-	 * @param mixed $value
+	 * @param mixed $target
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
-	public function equals( $value ) {
-		return $value === $this ||
-			( is_object( $value ) && get_class( $value ) == get_called_class() && serialize( $value ) === serialize( $this ) );
+	public function equals( $target ) {
+		if ( $this === $target ) {
+			return true;
+		}
+
+		return is_object( $target )
+			&& get_called_class() === get_class( $target )
+			&& serialize( $this ) === serialize( $target );
 	}
 
 	/**

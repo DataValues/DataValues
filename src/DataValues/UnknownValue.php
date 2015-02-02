@@ -88,13 +88,17 @@ class UnknownValue extends DataValueObject {
 	 *
 	 * @since 0.1
 	 *
-	 * @param mixed $value
+	 * @param mixed $target
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
-	public function equals( $value ) {
-		return $value === $this ||
-			( is_object( $value ) && get_class( $value ) == get_called_class() && $value->getValue() === $this->getValue() );
+	public function equals( $target ) {
+		if ( $this === $target ) {
+			return true;
+		}
+
+		return $target instanceof self
+			&& $this->value === $target->value;
 	}
 
 	/**
