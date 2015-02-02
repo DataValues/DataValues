@@ -2,7 +2,6 @@
 
 namespace DataValues\Tests;
 
-use DataValues\DataValue;
 use DataValues\UnDeserializableValue;
 use DataValues\UnknownValue;
 
@@ -50,10 +49,8 @@ class UnDeserializableValueTest extends DataValueTest {
 		return $argLists;
 	}
 
-
 	/**
 	 * @dataProvider instanceProvider
-	 *
 	 * @param UnDeserializableValue $value
 	 * @param array $arguments
 	 */
@@ -63,7 +60,6 @@ class UnDeserializableValueTest extends DataValueTest {
 
 	/**
 	 * @dataProvider instanceProvider
-	 *
 	 * @param UnDeserializableValue $value
 	 * @param array $arguments
 	 */
@@ -73,7 +69,6 @@ class UnDeserializableValueTest extends DataValueTest {
 
 	/**
 	 * @dataProvider instanceProvider
-	 *
 	 * @param UnDeserializableValue $value
 	 * @param array $arguments
 	 */
@@ -83,10 +78,10 @@ class UnDeserializableValueTest extends DataValueTest {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param DataValue $value
+	 * @param UnDeserializableValue $value
 	 * @param array $arguments
 	 */
-	public function testToArray( DataValue $value, array $arguments ) {
+	public function testToArray( UnDeserializableValue $value, array $arguments ) {
 		$array = $value->toArray();
 
 		$this->assertInternalType( 'array', $array );
@@ -101,7 +96,7 @@ class UnDeserializableValueTest extends DataValueTest {
 	/**
 	 * Dummy implementation, there's nothing to test here.
 	 *
-	 * @return array
+	 * @return array[]
 	 */
 	public static function dummyProvider() {
 		return array(
@@ -109,12 +104,7 @@ class UnDeserializableValueTest extends DataValueTest {
 		);
 	}
 
-	/**
-	 * @dataProvider dummyProvider
-	 * @param DataValue $value
-	 * @param array $arguments
-	 */
-	public function testNewFromArray( DataValue $value, array $arguments ) {
+	public function testNewFromArray() {
 		$this->assertFalse( method_exists( $this->getClass(), 'newFromArray' ) );
 	}
 
