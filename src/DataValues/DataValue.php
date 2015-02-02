@@ -10,7 +10,7 @@ namespace DataValues;
  * @licence GNU GPL v2+
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
-interface DataValue extends \Hashable, \Comparable, \Serializable, \Immutable, \Copyable {
+interface DataValue extends \Hashable, \Comparable, \Serializable, \Immutable {
 
 	/**
 	 * Returns the identifier of the datavalues type.
@@ -80,7 +80,9 @@ interface DataValue extends \Hashable, \Comparable, \Serializable, \Immutable, \
 	public function toArray();
 
 	/**
-	 * @see Copyable::getCopy
+	 * Returns a deep copy of the object.
+	 *
+	 * @since 0.1
 	 *
 	 * @return DataValue
 	 */

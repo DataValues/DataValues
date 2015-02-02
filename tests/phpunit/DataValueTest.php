@@ -98,7 +98,6 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 		$this->assertInstanceOf( '\Hashable', $value );
 		$this->assertInstanceOf( '\Comparable', $value );
 		$this->assertInstanceOf( '\Serializable', $value );
-		$this->assertInstanceOf( '\Copyable', $value );
 		$this->assertInstanceOf( '\DataValues\DataValue', $value );
 	}
 
