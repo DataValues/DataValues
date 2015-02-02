@@ -79,4 +79,11 @@ interface DataValue extends \Hashable, \Comparable, \Serializable, \Immutable, \
 	 */
 	public function toArray();
 
+	/**
+	 * @see Copyable::getCopy
+	 *
+	 * @return DataValue
+	 */
+	public function getCopy();
+
 }
