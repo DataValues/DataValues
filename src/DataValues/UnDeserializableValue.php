@@ -39,7 +39,6 @@ class UnDeserializableValue extends DataValueObject {
 	 * @param string $error The error that occurred when processing the original data structure.
 	 *
 	 * @throws InvalidArgumentException
-	 * @internal param mixed $value
 	 */
 	public function __construct( $data, $type, $error ) {
 		if ( !is_null( $type ) && !is_string( $type ) ) {
