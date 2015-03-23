@@ -43,7 +43,7 @@ abstract class DataValueObject implements DataValue {
 	}
 
 	/**
-	 * @see Copyable::getCopy
+	 * @see DataValue::getCopy
 	 *
 	 * @since 0.1
 	 *
