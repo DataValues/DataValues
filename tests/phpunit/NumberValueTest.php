@@ -56,8 +56,6 @@ class NumberValueTest extends DataValueTest {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param NumberValue $number
-	 * @param array $arguments
 	 */
 	public function testGetValue( NumberValue $number, array $arguments ) {
 		$this->assertEquals( $arguments[0], $number->getValue() );

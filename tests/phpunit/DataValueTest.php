@@ -90,8 +90,6 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param DataValue $value
-	 * @param array $arguments
 	 */
 	public function testImplements( DataValue $value, array $arguments ) {
 		$this->assertInstanceOf( '\Immutable', $value );
@@ -103,8 +101,6 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param DataValue $value
-	 * @param array $arguments
 	 */
 	public function testGetType( DataValue $value, array $arguments ) {
 		$valueType = $value->getType();
@@ -118,8 +114,6 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param DataValue $value
-	 * @param array $arguments
 	 */
 	public function testSerialization( DataValue $value, array $arguments ) {
 		$serialization = serialize( $value );
@@ -134,8 +128,6 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param DataValue $value
-	 * @param array $arguments
 	 */
 	public function testEquals( DataValue $value, array $arguments ) {
 		$this->assertTrue( $value->equals( $value ) );
@@ -147,8 +139,6 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param DataValue $value
-	 * @param array $arguments
 	 */
 	public function testGetHash( DataValue $value, array $arguments ) {
 		$hash = $value->getHash();
@@ -160,8 +150,6 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param DataValue $value
-	 * @param array $arguments
 	 */
 	public function testGetCopy( DataValue $value, array $arguments ) {
 		$copy = $value->getCopy();
@@ -172,8 +160,6 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param DataValue $value
-	 * @param array $arguments
 	 */
 	public function testGetValueSimple( DataValue $value, array $arguments ) {
 		$value->getValue();
@@ -182,8 +168,6 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param DataValue $value
-	 * @param array $arguments
 	 */
 	public function testGetArrayValueSimple( DataValue $value, array $arguments ) {
 		$value->getArrayValue();
@@ -192,8 +176,6 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param DataValue $value
-	 * @param array $arguments
 	 */
 	public function testToArray( DataValue $value, array $arguments ) {
 		$array = $value->toArray();

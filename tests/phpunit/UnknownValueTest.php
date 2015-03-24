@@ -52,8 +52,6 @@ class UnknownValueTest extends DataValueTest {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param UnknownValue $value
-	 * @param array $arguments
 	 */
 	public function testGetValue( UnknownValue $value, array $arguments ) {
 		$this->assertEquals( $arguments[0], $value->getValue() );
