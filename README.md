@@ -62,6 +62,7 @@ Contributions where also made by [several other awesome people]
 ### 2.0.0 (dev)
 
 * Dropped `Copyable` interface
+* Dropped deprecated constant `DataValues_VERSION`, use `DATAVALUES_VERSION` instead
 
 ### 1.0.1 (2014-11-27)
 
