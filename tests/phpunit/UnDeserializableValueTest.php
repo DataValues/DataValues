@@ -51,8 +51,6 @@ class UnDeserializableValueTest extends DataValueTest {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param UnDeserializableValue $value
-	 * @param array $arguments
 	 */
 	public function testGetValue( UnDeserializableValue $value, array $arguments ) {
 		$this->assertEquals( $arguments[0], $value->getValue() );
@@ -60,8 +58,6 @@ class UnDeserializableValueTest extends DataValueTest {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param UnDeserializableValue $value
-	 * @param array $arguments
 	 */
 	public function testGetArrayValue( UnDeserializableValue $value, array $arguments ) {
 		$this->assertEquals( $arguments[0], $value->getArrayValue() );
@@ -69,8 +65,6 @@ class UnDeserializableValueTest extends DataValueTest {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param UnDeserializableValue $value
-	 * @param array $arguments
 	 */
 	public function testGetTargetType( UnDeserializableValue $value, array $arguments ) {
 		$this->assertEquals( $arguments[1], $value->getTargetType() );
@@ -78,8 +72,6 @@ class UnDeserializableValueTest extends DataValueTest {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param UnDeserializableValue $value
-	 * @param array $arguments
 	 */
 	public function testToArray( UnDeserializableValue $value, array $arguments ) {
 		$array = $value->toArray();
@@ -91,17 +83,6 @@ class UnDeserializableValueTest extends DataValueTest {
 
 		$this->assertEquals( $value->getTargetType(), $array['type'] );
 		$this->assertEquals( $value->getValue(), $array['value'] );
-	}
-
-	/**
-	 * Dummy implementation, there's nothing to test here.
-	 *
-	 * @return array[]
-	 */
-	public static function dummyProvider() {
-		return array(
-			array( new UnknownValue( 'dummy' ), array() )
-		);
 	}
 
 	public function testNewFromArray() {

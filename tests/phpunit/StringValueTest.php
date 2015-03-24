@@ -48,8 +48,6 @@ class StringValueTest extends DataValueTest {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param StringValue $string
-	 * @param array $arguments
 	 */
 	public function testGetValue( StringValue $string, array $arguments ) {
 		$this->assertEquals( $arguments[0], $string->getValue() );

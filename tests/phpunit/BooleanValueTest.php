@@ -50,8 +50,6 @@ class BooleanValueTest extends DataValueTest {
 
 	/**
 	 * @dataProvider instanceProvider
-	 * @param BooleanValue $boolean
-	 * @param array $arguments
 	 */
 	public function testGetValue( BooleanValue $boolean, array $arguments ) {
 		$this->assertEquals( $arguments[0], $boolean->getValue() );
