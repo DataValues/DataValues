@@ -7,17 +7,12 @@
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 
-if ( defined( 'DataValues_VERSION' ) ) {
+if ( defined( 'DATAVALUES_VERSION' ) ) {
 	// Do not initialize more than once.
 	return 1;
 }
 
 define( 'DATAVALUES_VERSION', '2.0.0-alpha' );
-
-/**
- * @deprecated
- */
-define( 'DataValues_VERSION', DATAVALUES_VERSION );
 
 if ( defined( 'MEDIAWIKI' ) ) {
 	include __DIR__ . '/DataValues.mw.php';
