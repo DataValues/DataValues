@@ -31,8 +31,8 @@
 			"src/interfaces",
 			"tests/phpunit/DataValueTest.php"
 		],
-		"psr-0": {
-			"DataValues\\": "src/"
+		"psr-4": {
+			"DataValues\\": "src/DataValues/"
 		}
 	},
 	"extra": {
