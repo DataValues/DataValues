@@ -1,7 +1,7 @@
 # DataValues
 
 DataValues is a small PHP library that aims to be a common foundation for representing "simple"
-values. Values such as numbers, geographical coordinates, strings and times.
+values. Values such as booleans and strings.
 
 It is part of the [DataValues set of libraries](https://github.com/DataValues).
 
