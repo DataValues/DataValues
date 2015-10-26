@@ -13,3 +13,5 @@ before_script:
 
 script:
   - phpunit
+  
+sudo: false
