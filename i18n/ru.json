@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ole Yves"
-        ]
-    },
-    "datavalues-desc": "Коллекция объектов, представляющих различные значения",
-    "version-datavalues": "DataValues"
+	"@metadata": {
+		"authors": [
+			"Ole Yves"
+		]
+	},
+	"datavalues-desc": "Коллекция объектов, представляющих различные значения",
+	"version-datavalues": "DataValues"
 }

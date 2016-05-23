@@ -1,9 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Gomoko"
-        ]
-    },
-    "datavalues-desc": "Collection d'objets représentant différences sortes de valeurs",
-    "version-datavalues": "DataValues"
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Yasten"
+		]
+	},
+	"datavalues-desc": "Collection d'objets représentant différentes sortes de valeurs",
+	"version-datavalues": "DataValues"
 }

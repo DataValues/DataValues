@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Mormegil"
-        ]
-    },
-    "datavalues-desc": "Sbírka objektů reprezentujících různé druhy hodnot",
-    "version-datavalues": "DataValues"
+	"@metadata": {
+		"authors": [
+			"Mormegil"
+		]
+	},
+	"datavalues-desc": "Sbírka objektů reprezentujících různé druhy hodnot",
+	"version-datavalues": "DataValues"
 }

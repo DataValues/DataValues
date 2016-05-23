@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Xuacu"
-        ]
-    },
-    "datavalues-desc": "Coleición d'oxetos que representen varies clases de valores",
-    "version-datavalues": "Valores de datos"
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"datavalues-desc": "Coleición d'oxetos que representen varies clases de valores",
+	"version-datavalues": "Valores de datos"
 }
