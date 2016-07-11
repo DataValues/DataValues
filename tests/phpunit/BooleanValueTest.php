@@ -21,29 +21,29 @@ class BooleanValueTest extends DataValueTest {
 	 * @return string
 	 */
 	public function getClass() {
-		return 'DataValues\BooleanValue';
+		return BooleanValue::class;
 	}
 
 	public function validConstructorArgumentsProvider() {
-		$argLists = array();
+		$argLists = [];
 
-		$argLists[] = array( false );
-		$argLists[] = array( true );
+		$argLists[] = [ false ];
+		$argLists[] = [ true ];
 
 		return $argLists;
 	}
 
 	public function invalidConstructorArgumentsProvider() {
-		$argLists = array();
+		$argLists = [];
 
-		$argLists[] = array( 42 );
-		$argLists[] = array( array() );
-		$argLists[] = array( '1' );
-		$argLists[] = array( '' );
-		$argLists[] = array( 0 );
-		$argLists[] = array( 1 );
-		$argLists[] = array( 'foo' );
-		$argLists[] = array( null );
+		$argLists[] = [ 42 ];
+		$argLists[] = [ [] ];
+		$argLists[] = [ '1' ];
+		$argLists[] = [ '' ];
+		$argLists[] = [ 0 ];
+		$argLists[] = [ 1 ];
+		$argLists[] = [ 'foo' ];
+		$argLists[] = [ null ];
 
 		return $argLists;
 	}

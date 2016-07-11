@@ -72,10 +72,10 @@ abstract class DataValueObject implements DataValue {
 	 * @return array
 	 */
 	public function toArray() {
-		return array(
+		return [
 			'value' => $this->getArrayValue(),
 			'type' => $this->getType(),
-		);
+		];
 	}
 
 	/**

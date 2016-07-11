@@ -22,29 +22,29 @@ class UnDeserializableValueTest extends DataValueTest {
 	 * @return string
 	 */
 	public function getClass() {
-		return 'DataValues\UnDeserializableValue';
+		return UnDeserializableValue::class;
 	}
 
 	public function validConstructorArgumentsProvider() {
-		$argLists = array();
+		$argLists = [];
 
-		$argLists[] = array( null, null, 'No type and no data' );
-		$argLists[] = array( null, 'string', 'A type but no data' );
-		$argLists[] = array( array( 'stuff' ), 'string', 'A type and bad data' );
+		$argLists[] = [ null, null, 'No type and no data' ];
+		$argLists[] = [ null, 'string', 'A type but no data' ];
+		$argLists[] = [ [ 'stuff' ], 'string', 'A type and bad data' ];
 
 		return $argLists;
 	}
 
 	public function invalidConstructorArgumentsProvider() {
-		$argLists = array();
+		$argLists = [];
 
-		$argLists[] = array( new \stdClass(), null, 'No type and no data' );
-		$argLists[] = array( null, 42, 'No type and no data' );
-		$argLists[] = array( null, false, 'No type and no data' );
-		$argLists[] = array( null, array(), 'No type and no data' );
-		$argLists[] = array( null, null, null );
-		$argLists[] = array( null, null, true );
-		$argLists[] = array( null, null, array() );
+		$argLists[] = [ new \stdClass(), null, 'No type and no data' ];
+		$argLists[] = [ null, 42, 'No type and no data' ];
+		$argLists[] = [ null, false, 'No type and no data' ];
+		$argLists[] = [ null, [], 'No type and no data' ];
+		$argLists[] = [ null, null, null ];
+		$argLists[] = [ null, null, true ];
+		$argLists[] = [ null, null, [] ];
 
 		return $argLists;
 	}

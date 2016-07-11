@@ -69,7 +69,7 @@ class UnDeserializableValue extends DataValueObject {
 	 * @return string
 	 */
 	public function serialize() {
-		return serialize( array( $this->type, $this->data, $this->error ) );
+		return serialize( [ $this->type, $this->data, $this->error ] );
 	}
 
 	/**
@@ -109,11 +109,11 @@ class UnDeserializableValue extends DataValueObject {
 	 * @return array
 	 */
 	public function toArray() {
-		return array(
+		return [
 			'value' => $this->data,
 			'type' => $this->type,
 			'error' => $this->error,
-		);
+		];
 	}
 
 	/**

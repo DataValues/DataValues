@@ -21,27 +21,27 @@ class StringValueTest extends DataValueTest {
 	 * @return string
 	 */
 	public function getClass() {
-		return 'DataValues\StringValue';
+		return StringValue::class;
 	}
 
 	public function validConstructorArgumentsProvider() {
-		$argLists = array();
+		$argLists = [];
 
-		$argLists[] = array( 'foo' );
-		$argLists[] = array( '' );
-		$argLists[] = array( ' foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz ' );
+		$argLists[] = [ 'foo' ];
+		$argLists[] = [ '' ];
+		$argLists[] = [ ' foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz ' ];
 
 		return $argLists;
 	}
 
 	public function invalidConstructorArgumentsProvider() {
-		$argLists = array();
+		$argLists = [];
 
-		$argLists[] = array( 42 );
-		$argLists[] = array( array() );
-		$argLists[] = array( false );
-		$argLists[] = array( true );
-		$argLists[] = array( null );
+		$argLists[] = [ 42 ];
+		$argLists[] = [ [] ];
+		$argLists[] = [ false ];
+		$argLists[] = [ true ];
+		$argLists[] = [ null ];
 
 		return $argLists;
 	}
