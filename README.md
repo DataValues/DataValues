@@ -63,6 +63,7 @@ Contributions where also made by [several other awesome people]
 
 * Dropped `Copyable` interface
 * Dropped deprecated constant `DataValues_VERSION`, use `DATAVALUES_VERSION` instead
+* Raised required PHP version from 5.3 to 5.5
 
 ### 1.0.1 (2014-11-27)
 
