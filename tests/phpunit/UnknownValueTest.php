@@ -22,32 +22,33 @@ class UnknownValueTest extends DataValueTest {
 	 * @return string
 	 */
 	public function getClass() {
-		return 'DataValues\UnknownValue';
+		return UnknownValue::class;
 	}
 
 	public function validConstructorArgumentsProvider() {
-		$argLists = array();
+		$argLists = [];
 
-		$argLists[] = array( 42 );
-		$argLists[] = array( array() );
-		$argLists[] = array( false );
-		$argLists[] = array( true );
-		$argLists[] = array( null );
-		$argLists[] = array( 'foo' );
-		$argLists[] = array( '' );
-		$argLists[] = array( ' foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz ' );
+		$argLists[] = [ 42 ];
+		$argLists[] = [ [] ];
+		$argLists[] = [ false ];
+		$argLists[] = [ true ];
+		$argLists[] = [ null ];
+		$argLists[] = [ 'foo' ];
+		$argLists[] = [ '' ];
+		$argLists[] = [ ' foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz ' ];
 
 		return $argLists;
 	}
 
 	public function invalidConstructorArgumentsProvider() {
-		return array(
-			array(),
-		);
+		return [
+			[],
+		];
 	}
 
 	public function testConstructorWithInvalidArguments() {
-		$this->markTestSkipped( 'UnknownValue has no invalid arguments' );
+		// UnknownValue has no invalid arguments
+		$this->assertTrue( true );
 	}
 
 	/**

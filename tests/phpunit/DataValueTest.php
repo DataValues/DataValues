@@ -2,7 +2,11 @@
 
 namespace DataValues\Tests;
 
+use Comparable;
 use DataValues\DataValue;
+use Hashable;
+use Immutable;
+use Serializable;
 
 /**
  * Base for unit tests for DataValue implementing classes.
@@ -47,14 +51,14 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 	 * @return array [instance, constructor args]
 	 */
 	public function instanceProvider() {
-		$instanceBuilder = array( $this, 'newInstance' );
+		$instanceBuilder = [ $this, 'newInstance' ];
 
 		return array_map(
 			function( array $args ) use ( $instanceBuilder ) {
-				return array(
+				return [
 					call_user_func_array( $instanceBuilder, $args ),
 					$args
-				);
+				];
 			},
 			$this->validConstructorArgumentsProvider()
 		);
@@ -67,7 +71,7 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 	 */
 	public function testConstructorWithValidArguments() {
 		$dataItem = call_user_func_array(
-			array( $this, 'newInstance' ),
+			[ $this, 'newInstance' ],
 			func_get_args()
 		);
 
@@ -80,10 +84,10 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 	 * @since 0.1
 	 */
 	public function testConstructorWithInvalidArguments() {
-		$this->setExpectedException( 'Exception' );
+		$this->setExpectedException( \Exception::class );
 
 		call_user_func_array(
-			array( $this, 'newInstance' ),
+			[ $this, 'newInstance' ],
 			func_get_args()
 		);
 	}
@@ -92,11 +96,11 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 	 * @dataProvider instanceProvider
 	 */
 	public function testImplements( DataValue $value, array $arguments ) {
-		$this->assertInstanceOf( '\Immutable', $value );
-		$this->assertInstanceOf( '\Hashable', $value );
-		$this->assertInstanceOf( '\Comparable', $value );
-		$this->assertInstanceOf( '\Serializable', $value );
-		$this->assertInstanceOf( '\DataValues\DataValue', $value );
+		$this->assertInstanceOf( Immutable::class, $value );
+		$this->assertInstanceOf( Hashable::class, $value );
+		$this->assertInstanceOf( Comparable::class, $value );
+		$this->assertInstanceOf( Serializable::class, $value );
+		$this->assertInstanceOf( DataValue::class, $value );
 	}
 
 	/**
@@ -108,7 +112,7 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 		$this->assertTrue( strlen( $valueType ) > 0 );
 
 		// Check whether using getType statically returns the same as called from an instance:
-		$staticValueType = call_user_func( array( $this->getClass(), 'getType' ) );
+		$staticValueType = call_user_func( [ $this->getClass(), 'getType' ] );
 		$this->assertEquals( $staticValueType, $valueType );
 	}
 
@@ -120,7 +124,7 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 		$this->assertInternalType( 'string', $serialization );
 
 		$unserialized = unserialize( $serialization );
-		$this->assertInstanceOf( '\DataValues\DataValue', $unserialized );
+		$this->assertInstanceOf( DataValue::class, $unserialized );
 
 		$this->assertTrue( $value->equals( $unserialized ) );
 		$this->assertEquals( $value, $unserialized );
@@ -132,7 +136,7 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 	public function testEquals( DataValue $value, array $arguments ) {
 		$this->assertTrue( $value->equals( $value ) );
 
-		foreach ( array( true, false, null, 'foo', 42, array(), 4.2 ) as $otherValue ) {
+		foreach ( [ true, false, null, 'foo', 42, [], 4.2 ] as $otherValue ) {
 			$this->assertFalse( $value->equals( $otherValue ) );
 		}
 	}
@@ -154,7 +158,7 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 	public function testGetCopy( DataValue $value, array $arguments ) {
 		$copy = $value->getCopy();
 
-		$this->assertInstanceOf( '\DataValues\DataValue', $copy );
+		$this->assertInstanceOf( DataValue::class, $copy );
 		$this->assertTrue( $value->equals( $copy ) );
 	}
 
