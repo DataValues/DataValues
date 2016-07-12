@@ -41,4 +41,3 @@ $GLOBALS['wgHooks']['ExtensionTypes'][] = function( array &$extensionTypes ) {
 	return true;
 	// @codeCoverageIgnoreEnd
 };
-

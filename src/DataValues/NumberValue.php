@@ -87,7 +87,7 @@ class NumberValue extends DataValueObject {
 	 *
 	 * @param int|float $data
 	 *
-	 * @return NumberValue
+	 * @return self
 	 */
 	public static function newFromArray( $data ) {
 		return new static( $data );
