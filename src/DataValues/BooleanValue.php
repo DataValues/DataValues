@@ -46,8 +46,6 @@ class BooleanValue extends DataValueObject {
 	 * @since 0.1
 	 *
 	 * @param string $value '0' for false, '1' for true.
-	 *
-	 * @return BooleanValue
 	 */
 	public function unserialize( $value ) {
 		$this->value = $value === '1';
@@ -89,7 +87,7 @@ class BooleanValue extends DataValueObject {
 	 *
 	 * @param bool $data
 	 *
-	 * @return BooleanValue
+	 * @return self
 	 */
 	public static function newFromArray( $data ) {
 		return new static( $data );

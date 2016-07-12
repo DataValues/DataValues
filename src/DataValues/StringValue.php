@@ -94,7 +94,7 @@ class StringValue extends DataValueObject {
 	 *
 	 * @param string $data
 	 *
-	 * @return StringValue
+	 * @return self
 	 */
 	public static function newFromArray( $data ) {
 		return new static( $data );

@@ -3,7 +3,6 @@
 namespace DataValues\Tests;
 
 use DataValues\UnDeserializableValue;
-use DataValues\UnknownValue;
 
 /**
  * @covers DataValues\UnDeserializableValue

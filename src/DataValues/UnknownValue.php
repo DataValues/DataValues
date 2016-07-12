@@ -107,7 +107,7 @@ class UnknownValue extends DataValueObject {
 	 *
 	 * @param mixed $data
 	 *
-	 * @return UnknownValue
+	 * @return self
 	 */
 	public static function newFromArray( $data ) {
 		return new static( $data );
