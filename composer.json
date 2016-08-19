@@ -20,6 +20,9 @@
 	"require": {
 		"php": ">=5.5.0"
 	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "~0.5"
+	},
 	"replace": {
 		"mediawiki/data-values": "*"
 	},
@@ -39,5 +42,10 @@
 		"branch-alias": {
 			"dev-master": "2.0.x-dev"
 		}
+	},
+	"scripts": {
+		"phpcs": [
+			"vendor/bin/phpcs src/* tests/* --standard=phpcs.xml -sp"
+		]
 	}
 }
