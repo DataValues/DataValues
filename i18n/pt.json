@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Fúlvio"
 		]
 	},
+	"datavalues-desc": "Coleção de objetos representando vários tipos de valores",
 	"version-datavalues": "Valores de dados"
 }
