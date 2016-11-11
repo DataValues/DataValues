@@ -2,6 +2,11 @@
 
 namespace DataValues;
 
+use Comparable;
+use Hashable;
+use Immutable;
+use Serializable;
+
 /**
  * Interface for objects that represent a single data value.
  *
@@ -10,7 +15,7 @@ namespace DataValues;
  * @license GPL-2.0+
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
-interface DataValue extends \Hashable, \Comparable, \Serializable, \Immutable {
+interface DataValue extends Hashable, Comparable, Serializable, Immutable {
 
 	/**
 	 * Returns the identifier of the datavalues type.

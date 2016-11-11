@@ -4,8 +4,11 @@ namespace DataValues\Tests;
 
 use Comparable;
 use DataValues\DataValue;
+use Exception;
 use Hashable;
 use Immutable;
+use PHPUnit_Framework_TestCase;
+use ReflectionClass;
 use Serializable;
 
 /**
@@ -16,7 +19,7 @@ use Serializable;
  * @license GPL-2.0+
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
-abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
+abstract class DataValueTest extends PHPUnit_Framework_TestCase {
 
 	/**
 	 * Returns the name of the concrete class tested by this test.
@@ -39,7 +42,7 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 	 * @return mixed
 	 */
 	public function newInstance() {
-		$reflector = new \ReflectionClass( $this->getClass() );
+		$reflector = new ReflectionClass( $this->getClass() );
 		$args = func_get_args();
 		$instance = $reflector->newInstanceArgs( $args );
 		return $instance;
@@ -84,7 +87,7 @@ abstract class DataValueTest extends \PHPUnit_Framework_TestCase {
 	 * @since 0.1
 	 */
 	public function testConstructorWithInvalidArguments() {
-		$this->setExpectedException( \Exception::class );
+		$this->setExpectedException( Exception::class );
 
 		call_user_func_array(
 			[ $this, 'newInstance' ],
