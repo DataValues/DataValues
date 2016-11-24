@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Vitorvicentevalente",
-			"Fúlvio"
+			"Fúlvio",
+			"Hamilton Abreu"
 		]
 	},
-	"datavalues-desc": "Coleção de objetos representando vários tipos de valores",
+	"datavalues-desc": "Conjunto de objetos que representam vários tipos de valores",
 	"version-datavalues": "Valores de dados"
 }
