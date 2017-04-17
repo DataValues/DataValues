@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"StanProg"
+		]
+	},
+	"datavalues-desc": "Колекция от обекти, представляващи различни видове променливи",
+	"version-datavalues": "DataValues"
+}
