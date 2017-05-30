@@ -61,6 +61,7 @@ Contributions where also made by [several other awesome people]
 
 ### 2.0.0 (dev)
 
+* Added `MonolingualTextValue` and `MultilingualTextValue` (moved from DataValues Common)
 * Dropped `Copyable` interface
 * Dropped deprecated constant `DataValues_VERSION`, use `DATAVALUES_VERSION` instead
 * Raised required PHP version from 5.3 to 5.5
