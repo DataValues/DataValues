@@ -34,10 +34,6 @@ $GLOBALS['wgExtensionMessagesFiles']['DataValues'] = __DIR__ . '/DataValues.i18n
  *
  * @return boolean
  */
-$GLOBALS['wgHooks']['ExtensionTypes'][] = function( array &$extensionTypes ) {
-	// @codeCoverageIgnoreStart
+$GLOBALS['wgHooks']['ExtensionTypes'][] = function ( array &$extensionTypes ) {
 	$extensionTypes['datavalues'] = wfMessage( 'version-datavalues' )->text();
-
-	return true;
-	// @codeCoverageIgnoreEnd
 };
