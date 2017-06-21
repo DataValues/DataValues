@@ -81,8 +81,8 @@ abstract class DataValueObject implements DataValue {
 	/**
 	 * Checks that $data is an array and contains the given fields.
 	 *
-	 * @param mixed $data
-	 * @param array $fields
+	 * @param array $data
+	 * @param string[] $fields
 	 *
 	 * @todo: this should be removed once we got rid of all the static newFromArray() methods.
 	 *
