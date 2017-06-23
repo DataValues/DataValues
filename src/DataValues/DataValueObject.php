@@ -15,8 +15,6 @@ abstract class DataValueObject implements DataValue {
 	/**
 	 * @see Hashable::getHash
 	 *
-	 * @since 0.1
-	 *
 	 * @return string
 	 */
 	public function getHash() {
@@ -25,8 +23,6 @@ abstract class DataValueObject implements DataValue {
 
 	/**
 	 * @see Comparable::equals
-	 *
-	 * @since 0.1
 	 *
 	 * @param mixed $target
 	 *
@@ -45,8 +41,6 @@ abstract class DataValueObject implements DataValue {
 	/**
 	 * @see DataValue::getCopy
 	 *
-	 * @since 0.1
-	 *
 	 * @return DataValue
 	 */
 	public function getCopy() {
@@ -56,8 +50,6 @@ abstract class DataValueObject implements DataValue {
 	/**
 	 * @see DataValue::getArrayValue
 	 *
-	 * @since 0.1
-	 *
 	 * @return mixed
 	 */
 	public function getArrayValue() {
@@ -66,8 +58,6 @@ abstract class DataValueObject implements DataValue {
 
 	/**
 	 * @see DataValue::toArray
-	 *
-	 * @since 0.1
 	 *
 	 * @return array
 	 */
@@ -82,7 +72,7 @@ abstract class DataValueObject implements DataValue {
 	 * Checks that $data is an array and contains the given fields.
 	 *
 	 * @param mixed $data
-	 * @param array $fields
+	 * @param string[] $fields
 	 *
 	 * @todo: this should be removed once we got rid of all the static newFromArray() methods.
 	 *

@@ -44,7 +44,7 @@ interface DataValue extends Hashable, Comparable, Serializable, Immutable {
 	 * In essence, this method returns the "simplest" representation of the value.
 	 *
 	 * Example:
-	 * - NumberDataValue returns a float or integer
+	 * - NumberValue returns a float or integer
 	 * - MediaWikiTitleValue returns a Title object
 	 * - QuantityValue returns itself
 	 *
@@ -55,7 +55,7 @@ interface DataValue extends Hashable, Comparable, Serializable, Immutable {
 	public function getValue();
 
 	/**
-	 * Returns the value in array form.
+	 * Returns the value in a form suitable for an array serialization.
 	 *
 	 * For simple values (ie a string) the return value will be equal to that of @see getValue.
 	 *

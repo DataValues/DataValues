@@ -2,6 +2,7 @@
 
 namespace DataValues\Tests;
 
+use DataValues\DataValue;
 use DataValues\UnDeserializableValue;
 
 /**
@@ -72,7 +73,7 @@ class UnDeserializableValueTest extends DataValueTest {
 	/**
 	 * @dataProvider instanceProvider
 	 */
-	public function testToArray( UnDeserializableValue $value, array $arguments ) {
+	public function testToArray( DataValue $value, array $arguments ) {
 		$array = $value->toArray();
 
 		$this->assertInternalType( 'array', $array );

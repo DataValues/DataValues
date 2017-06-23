@@ -28,8 +28,6 @@ class UnknownValue extends DataValueObject {
 	/**
 	 * @see Serializable::serialize
 	 *
-	 * @since 0.1
-	 *
 	 * @return string
 	 */
 	public function serialize() {
@@ -38,8 +36,6 @@ class UnknownValue extends DataValueObject {
 
 	/**
 	 * @see Serializable::unserialize
-	 *
-	 * @since 0.1
 	 *
 	 * @param string $value
 	 */
@@ -50,8 +46,6 @@ class UnknownValue extends DataValueObject {
 	/**
 	 * @see DataValue::getType
 	 *
-	 * @since 0.1
-	 *
 	 * @return string
 	 */
 	public static function getType() {
@@ -60,8 +54,6 @@ class UnknownValue extends DataValueObject {
 
 	/**
 	 * @see DataValue::getSortKey
-	 *
-	 * @since 0.1
 	 *
 	 * @return int Always 0 in this implementation.
 	 */
@@ -73,8 +65,6 @@ class UnknownValue extends DataValueObject {
 	 * Returns the value.
 	 * @see DataValue::getValue
 	 *
-	 * @since 0.1
-	 *
 	 * @return mixed
 	 */
 	public function getValue() {
@@ -83,8 +73,6 @@ class UnknownValue extends DataValueObject {
 
 	/**
 	 * @see Comparable::equals
-	 *
-	 * @since 0.1
 	 *
 	 * @param mixed $target
 	 *
@@ -100,10 +88,12 @@ class UnknownValue extends DataValueObject {
 	}
 
 	/**
-	 * Constructs a new instance of the DataValue from the provided data.
-	 * This can round-trip with @see getArrayValue
+	 * Constructs a new instance from the provided data. Required for @see DataValueDeserializer.
+	 * This is expected to round-trip with @see getArrayValue.
 	 *
-	 * @since 0.1
+	 * @deprecated since 1.1. Static DataValue::newFromArray constructors like this are
+	 *  underspecified (not in the DataValue interface), and misleadingly named (should be named
+	 *  newFromArrayValue). Instead, use DataValue builder callbacks in @see DataValueDeserializer.
 	 *
 	 * @param mixed $data
 	 *
