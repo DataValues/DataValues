@@ -32,8 +32,6 @@ class UnDeserializableValue extends DataValueObject {
 	private $error;
 
 	/**
-	 * @since 0.1
-	 *
 	 * @param mixed $data The raw data structure
 	 * @param string|null $type The originally intended type
 	 * @param string $error The error that occurred when processing the original data structure.
@@ -64,8 +62,6 @@ class UnDeserializableValue extends DataValueObject {
 	 * @note: The serialization includes the intended type and the error message
 	 *        along with the original data.
 	 *
-	 * @since 0.1
-	 *
 	 * @return string
 	 */
 	public function serialize() {
@@ -74,8 +70,6 @@ class UnDeserializableValue extends DataValueObject {
 
 	/**
 	 * @see Serializable::unserialize
-	 *
-	 * @since 0.1
 	 *
 	 * @param string $value
 	 */
@@ -88,8 +82,6 @@ class UnDeserializableValue extends DataValueObject {
 	 * @see DataValue::getArrayValue
 	 *
 	 * @note: this returns the original raw data structure.
-	 *
-	 * @since 0.1
 	 *
 	 * @return mixed
 	 */
@@ -104,8 +96,6 @@ class UnDeserializableValue extends DataValueObject {
 	 *        does not model a UnDeserializableValue, but the originally intended type of value.
 	 *        This allows for round trip compatibility with unknown types of data.
 	 *
-	 * @since 0.1
-	 *
 	 * @return array
 	 */
 	public function toArray() {
@@ -119,8 +109,6 @@ class UnDeserializableValue extends DataValueObject {
 	/**
 	 * @see DataValue::getType
 	 *
-	 * @since 0.1
-	 *
 	 * @return string
 	 */
 	public static function getType() {
@@ -129,8 +117,6 @@ class UnDeserializableValue extends DataValueObject {
 
 	/**
 	 * Returns the value type that was intended for the bad data structure.
-	 *
-	 * @since 0.1
 	 *
 	 * @return string|null
 	 */
@@ -142,8 +128,6 @@ class UnDeserializableValue extends DataValueObject {
 	 * Returns a string describing the issue that caused the failure
 	 * represented by this UnDeserializableValue object.
 	 *
-	 * @since 0.1
-	 *
 	 * @return string
 	 */
 	public function getReason() {
@@ -152,8 +136,6 @@ class UnDeserializableValue extends DataValueObject {
 
 	/**
 	 * @see DataValue::getSortKey
-	 *
-	 * @since 0.1
 	 *
 	 * @return int Always 0 in this implementation.
 	 */
@@ -165,8 +147,6 @@ class UnDeserializableValue extends DataValueObject {
 	 * Returns the raw data structure.
 	 * @see DataValue::getValue
 	 *
-	 * @since 0.1
-	 *
 	 * @return mixed
 	 */
 	public function getValue() {
@@ -175,8 +155,6 @@ class UnDeserializableValue extends DataValueObject {
 
 	/**
 	 * @see Comparable::equals
-	 *
-	 * @since 0.1
 	 *
 	 * @param mixed $target
 	 *

@@ -18,10 +18,11 @@
 		}
 	],
 	"require": {
-		"php": ">=5.5.0"
+		"php": ">=5.5.9"
 	},
 	"require-dev": {
-		"mediawiki/mediawiki-codesniffer": "~0.5"
+		"mediawiki/mediawiki-codesniffer": "0.7.2",
+		"phpunit/phpunit": "~4.8"
 	},
 	"replace": {
 		"mediawiki/data-values": "*"
@@ -44,8 +45,13 @@
 		}
 	},
 	"scripts": {
+		"test": [
+			"@validate --no-interaction",
+			"@phpcs",
+			"phpunit"
+		],
 		"phpcs": [
-			"vendor/bin/phpcs src/* tests/* --standard=phpcs.xml -sp"
+			"phpcs src/* tests/* --standard=phpcs.xml -sp"
 		]
 	}
 }
