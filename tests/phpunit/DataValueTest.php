@@ -57,7 +57,7 @@ abstract class DataValueTest extends PHPUnit_Framework_TestCase {
 		$instanceBuilder = [ $this, 'newInstance' ];
 
 		return array_map(
-			function( array $args ) use ( $instanceBuilder ) {
+			function ( array $args ) use ( $instanceBuilder ) {
 				return [
 					call_user_func_array( $instanceBuilder, $args ),
 					$args
