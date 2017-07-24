@@ -28,11 +28,11 @@ abstract class DataValueTest extends PHPUnit_Framework_TestCase {
 	 *
 	 * @return string
 	 */
-	public abstract function getClass();
+	abstract public function getClass();
 
-	public abstract function validConstructorArgumentsProvider();
+	abstract public function validConstructorArgumentsProvider();
 
-	public abstract function invalidConstructorArgumentsProvider();
+	abstract public function invalidConstructorArgumentsProvider();
 
 	/**
 	 * Creates and returns a new instance of the concrete class.
