@@ -7,8 +7,12 @@
 	<rule ref="Generic.Metrics.NestingLevel" />
 	<rule ref="Squiz.Operators.ValidLogicalOperators" />
 	<rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
-		<exclude-pattern>src/interfaces/*.php</exclude-pattern>
+		<exclude-pattern>src/interfaces/</exclude-pattern>
 	</rule>
+	<rule ref="PSR1.Files.SideEffects">
+		<exclude-pattern>DataValues</exclude-pattern>
+	</rule>
+
 	<file>.</file>
 	<exclude-pattern>node_modules</exclude-pattern>
 </ruleset>
