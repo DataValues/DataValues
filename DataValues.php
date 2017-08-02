@@ -12,7 +12,7 @@ if ( defined( 'DATAVALUES_VERSION' ) ) {
 	return 1;
 }
 
-define( 'DATAVALUES_VERSION', '2.0.0-alpha' );
+define( 'DATAVALUES_VERSION', '2.0.0' );
 
 if ( defined( 'MEDIAWIKI' ) ) {
 	include __DIR__ . '/DataValues.mw.php';
