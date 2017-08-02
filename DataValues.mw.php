@@ -9,17 +9,17 @@
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 
-$GLOBALS['wgExtensionCredits']['datavalues'][] = array(
+$GLOBALS['wgExtensionCredits']['datavalues'][] = [
 	'path' => __DIR__,
 	'name' => 'DataValues',
 	'version' => DATAVALUES_VERSION,
-	'author' => array(
+	'author' => [
 		'[https://www.mediawiki.org/wiki/User:Jeroen_De_Dauw Jeroen De Dauw]'
-	),
+	],
 	'url' => 'https://github.com/DataValues/DataValues',
 	'descriptionmsg' => 'datavalues-desc',
 	'license-name' => 'GPL-2.0+'
-);
+];
 
 $GLOBALS['wgMessagesDirs']['DataValues'] = __DIR__ . '/i18n';
 $GLOBALS['wgExtensionMessagesFiles']['DataValues'] = __DIR__ . '/DataValues.i18n.php';

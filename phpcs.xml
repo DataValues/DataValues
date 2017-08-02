@@ -1,47 +1,18 @@
 <?xml version="1.0"?>
 <ruleset name="DataValuesDataValues">
-	<!-- See https://github.com/wikimedia/mediawiki-tools-codesniffer/blob/master/MediaWiki/ruleset.xml -->
-	<rule ref="vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
-		<exclude name="Generic.Arrays.DisallowLongArraySyntax" />
-		<exclude name="MediaWiki.Commenting.FunctionComment" />
-		<exclude name="PSR2.Methods.MethodDeclaration.AbstractAfterVisibility" />
+	<rule ref="./vendor/wikibase/wikibase-codesniffer/Wikibase" />
+
+	<rule ref="Generic.Formatting.NoSpaceAfterCast" />
+	<rule ref="Generic.Metrics.CyclomaticComplexity" />
+	<rule ref="Generic.Metrics.NestingLevel" />
+	<rule ref="Squiz.Operators.ValidLogicalOperators" />
+	<rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+		<exclude-pattern>src/interfaces/</exclude-pattern>
+	</rule>
+	<rule ref="PSR1.Files.SideEffects">
+		<exclude-pattern>DataValues</exclude-pattern>
 	</rule>
 
-	<rule ref="Generic.ControlStructures" />
-	<rule ref="Generic.PHP.CharacterBeforePHPOpeningTag" />
-
-	<rule ref="PSR1">
-		<exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
-	</rule>
-	<rule ref="PSR1.Files.SideEffects.FoundWithSymbols">
-		<exclude-pattern>DataValues\.php</exclude-pattern>
-	</rule>
-	<rule ref="PSR1.Methods.CamelCapsMethodName.NotCamelCaps">
-		<!-- Exclude test methods like "testGivenInvalidInput_methodThrowsException". -->
-		<exclude-pattern>tests*Test*\.php</exclude-pattern>
-	</rule>
-
-	<rule ref="PSR2.Files" />
-
-	<rule ref="Squiz.Classes.SelfMemberReference" />
-	<rule ref="Squiz.ControlStructures.ControlSignature" />
-	<rule ref="Squiz.Functions.FunctionDuplicateArgument" />
-	<rule ref="Squiz.Functions.GlobalFunction" />
-	<rule ref="Squiz.Scope" />
-	<rule ref="Squiz.WhiteSpace.FunctionSpacing">
-		<properties>
-			<property name="spacing" value="1" />
-		</properties>
-	</rule>
-	<rule ref="Squiz.WhiteSpace.OperatorSpacing">
-		<properties>
-			<property name="ignoreNewlines" value="true" />
-		</properties>
-	</rule>
-
-	<arg name="extensions" value="php" />
-	<arg name="encoding" value="utf8" />
 	<file>.</file>
-	<exclude-pattern type="relative">^vendor/</exclude-pattern>
-	<exclude-pattern>DataValues\.i18n\.php</exclude-pattern>
+	<exclude-pattern>node_modules</exclude-pattern>
 </ruleset>
