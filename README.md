@@ -35,7 +35,7 @@ DataValues 2.0:
 
     {
         "require": {
-            "data-values/data-values": "~2.0"
+            "data-values/data-values": "^2.0.0"
         }
     }
 
@@ -62,16 +62,14 @@ Contributions where also made by [several other awesome people]
 
 ## Release notes
 
-### 2.0.0 (2017-06-21)
+### 2.0.0 (2017-08-02)
 
 * Dropped `Copyable` interface
 * Dropped deprecated constant `DataValues_VERSION`, use `DATAVALUES_VERSION` instead
-* Dropped support for PHP 5.3 and PHP 5.4
-* The CI now ensures compatibility with PHP 7.0 and PHP 7.1
-
-### 1.0.1 (2014-11-27)
-
+* Deprecated `newFromArray` in all `DataValue` implementations.
+* Fixed and updated documentation throughout the code
 * Removed broken constructor tests
+* Updated minimal required PHP version from 5.3 to 5.5.9
 
 ### 1.0.0 (2014-09-26)
 
