@@ -62,6 +62,10 @@ Contributions where also made by [several other awesome people]
 
 ## Release notes
 
+### 2.1.0 (2017-08-09)
+
+* Removed MediaWiki integration
+
 ### 2.0.0 (2017-08-02)
 
 * Dropped `Copyable` interface
