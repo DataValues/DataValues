@@ -13,7 +13,3 @@ if ( defined( 'DATAVALUES_VERSION' ) ) {
 }
 
 define( 'DATAVALUES_VERSION', '2.0.0' );
-
-if ( defined( 'MEDIAWIKI' ) ) {
-	include __DIR__ . '/DataValues.mw.php';
-}
