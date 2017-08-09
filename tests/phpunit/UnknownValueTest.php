@@ -42,11 +42,11 @@ class UnknownValueTest extends DataValueTest {
 	}
 
 	public function invalidConstructorArgumentsProvider() {
-		$argLists = array();
+		// noop to satisfy DataValueTest interface
+	}
 
-		$argLists[] = array();
-
-		return $argLists;
+	public function testConstructorWithInvalidArguments() {
+		$this->markTestSkipped( 'UnknownValue constructor accepts arguments of any type' );
 	}
 
 	/**
