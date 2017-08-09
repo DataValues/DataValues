@@ -18,7 +18,3 @@ define( 'DATAVALUES_VERSION', '1.0' );
  * @deprecated
  */
 define( 'DataValues_VERSION', DATAVALUES_VERSION );
-
-if ( defined( 'MEDIAWIKI' ) ) {
-	include __DIR__ . '/DataValues.mw.php';
-}
