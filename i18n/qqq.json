@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki",
+			"Umherirrender"
+		]
+	},
+	"datavalues-desc": "{{desc|name=Data Values|url=https://www.mediawiki.org/wiki/Extension:DataValues}}",
+	"version-datavalues": "Name of the DataValues extension collection, used on [[Special:Version]]"
+}

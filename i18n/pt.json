@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu",
+			"Vitorvicentevalente"
+		]
+	},
+	"datavalues-desc": "Conjunto de objetos que representam vários tipos de valores",
+	"version-datavalues": "Valores de dados"
+}
