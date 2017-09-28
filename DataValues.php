@@ -12,4 +12,4 @@ if ( defined( 'DATAVALUES_VERSION' ) ) {
 	return 1;
 }
 
-define( 'DATAVALUES_VERSION', '2.1.0' );
+define( 'DATAVALUES_VERSION', '2.1.1' );
