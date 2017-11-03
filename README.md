@@ -79,10 +79,6 @@ Contributions where also made by [several other awesome people]
 * Removed broken constructor tests
 * Updated minimal required PHP version from 5.3 to 5.5.9
 
-### 1.1.2 (2017-11-03)
-
-* Expand .gitattributes file
-
 ### 1.1.1 (2017-11-02)
 
 * Add .gitattributes file
