@@ -79,6 +79,18 @@ Contributions where also made by [several other awesome people]
 * Removed broken constructor tests
 * Updated minimal required PHP version from 5.3 to 5.5.9
 
+### 1.1.2 (2017-11-03)
+
+* Expand .gitattributes file
+
+### 1.1.1 (2017-11-02)
+
+* Add .gitattributes file
+
+### 1.1.0 (2017-08-09)
+
+* Remove MediaWiki integration
+
 ### 1.0.0 (2014-09-26)
 
 * The CI now ensures compatibility with PHP 5.6 and HHVM
