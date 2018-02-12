@@ -57,7 +57,7 @@ interface DataValue extends Hashable, Comparable, Serializable, Immutable {
 	/**
 	 * Returns the value in a form suitable for an array serialization.
 	 *
-	 * For simple values (ie a string) the return value will be equal to that of @see getValue.
+	 * For simple values (ie a string) the return value will be equal to that of {@see getValue}.
 	 *
 	 * Complex DataValues can provide a nicer implementation though, for instance a
 	 * geographical coordinate value could provide an array with keys latitude,
@@ -73,8 +73,8 @@ interface DataValue extends Hashable, Comparable, Serializable, Immutable {
 	 * Returns the whole DataValue in array form.
 	 *
 	 * The array contains:
-	 * - value: mixed, same as the result of @see getArrayValue
-	 * - type: string, same as the result of @see getType
+	 * - value: mixed, same as the result of {@see getArrayValue}
+	 * - type: string, same as the result of {@see getType}
 	 *
 	 * This is sufficient for unserialization in a factory.
 	 *

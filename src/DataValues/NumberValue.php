@@ -6,7 +6,7 @@ namespace DataValues;
  * Class representing a simple numeric value.
  *
  * More complex numeric values that have associated info such as
- * unit and accuracy can be represented with a @see QuantityValue.
+ * unit and accuracy can be represented with a {@see QuantityValue}.
  *
  * @since 0.1
  *
@@ -80,19 +80,19 @@ class NumberValue extends DataValueObject {
 	}
 
 	/**
-	 * Constructs a new instance from the provided data. Required for @see DataValueDeserializer.
-	 * This is expected to round-trip with @see getArrayValue.
+	 * Constructs a new instance from the provided data. Required for {@see DataValueDeserializer}.
+	 * This is expected to round-trip with {@see getArrayValue}.
 	 *
 	 * @deprecated since 1.1. Static DataValue::newFromArray constructors like this are
 	 *  underspecified (not in the DataValue interface), and misleadingly named (should be named
-	 *  newFromArrayValue). Instead, use DataValue builder callbacks in @see DataValueDeserializer.
+	 *  newFromArrayValue). Instead, use DataValue builder callbacks in {@see DataValueDeserializer}.
 	 *
 	 * @param mixed $data Warning! Even if this is expected to be a value as returned by
-	 *  @see getArrayValue, callers of this specific newFromArray implementation can not guarantee
+	 *  {@see getArrayValue}, callers of this specific newFromArray implementation can not guarantee
 	 *  this. This is not guaranteed to be a number!
 	 *
 	 * @throws IllegalValueException if $data is not in the expected format. Subclasses of
-	 *  InvalidArgumentException are expected and properly handled by @see DataValueDeserializer.
+	 *  InvalidArgumentException are expected and properly handled by {@see DataValueDeserializer}.
 	 * @return self
 	 */
 	public static function newFromArray( $data ) {
