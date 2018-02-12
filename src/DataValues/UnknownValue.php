@@ -88,12 +88,12 @@ class UnknownValue extends DataValueObject {
 	}
 
 	/**
-	 * Constructs a new instance from the provided data. Required for @see DataValueDeserializer.
-	 * This is expected to round-trip with @see getArrayValue.
+	 * Constructs a new instance from the provided data. Required for {@see DataValueDeserializer}.
+	 * This is expected to round-trip with {@see getArrayValue}.
 	 *
 	 * @deprecated since 1.1. Static DataValue::newFromArray constructors like this are
 	 *  underspecified (not in the DataValue interface), and misleadingly named (should be named
-	 *  newFromArrayValue). Instead, use DataValue builder callbacks in @see DataValueDeserializer.
+	 *  newFromArrayValue). Instead, use DataValue builder callbacks in {@see DataValueDeserializer}.
 	 *
 	 * @param mixed $data
 	 *
