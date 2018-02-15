@@ -60,6 +60,8 @@ Contributions where also made by
 
 ### 3.0.0 (dev)
 
+* Removed `getCopy` from the `DataValue` interface and all implementations
+* Removed `getSortKey` from the `DataValue` interface and all implementations
 * Removed `DATAVALUES_VERSION` constant
 * Removed `DataValueTest` (create a copy if you need it, though better refactor away the bad design)
 * Raised minimum PHP version from 5.5.9 to 7.2

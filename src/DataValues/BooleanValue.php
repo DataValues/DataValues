@@ -47,15 +47,6 @@ class BooleanValue extends DataValueObject {
 	}
 
 	/**
-	 * @see DataValue::getSortKey
-	 *
-	 * @return int 0 for false, 1 for true.
-	 */
-	public function getSortKey() {
-		return $this->value ? 1 : 0;
-	}
-
-	/**
 	 * Returns the boolean.
 	 * @see DataValue::getValue
 	 *

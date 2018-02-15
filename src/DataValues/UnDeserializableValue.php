@@ -132,15 +132,6 @@ class UnDeserializableValue extends DataValueObject {
 	}
 
 	/**
-	 * @see DataValue::getSortKey
-	 *
-	 * @return int Always 0 in this implementation.
-	 */
-	public function getSortKey() {
-		return 0;
-	}
-
-	/**
 	 * Returns the raw data structure.
 	 * @see DataValue::getValue
 	 *

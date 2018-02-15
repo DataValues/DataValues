@@ -56,15 +56,6 @@ class NumberValue extends DataValueObject {
 	}
 
 	/**
-	 * @see DataValue::getSortKey
-	 *
-	 * @return int|float
-	 */
-	public function getSortKey() {
-		return $this->value;
-	}
-
-	/**
 	 * Returns the number.
 	 * @see DataValue::getValue
 	 *

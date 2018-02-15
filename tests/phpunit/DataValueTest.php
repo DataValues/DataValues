@@ -136,17 +136,6 @@ abstract class DataValueTest extends TestCase {
 
 		$this->assertIsString( $hash );
 		$this->assertEquals( $hash, $value->getHash() );
-		$this->assertEquals( $hash, $value->getCopy()->getHash() );
-	}
-
-	/**
-	 * @dataProvider instanceProvider
-	 */
-	public function testGetCopy( DataValue $value, array $arguments ) {
-		$copy = $value->getCopy();
-
-		$this->assertInstanceOf( DataValue::class, $copy );
-		$this->assertTrue( $value->equals( $copy ) );
 	}
 
 	/**

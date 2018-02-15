@@ -48,15 +48,6 @@ class UnknownValue extends DataValueObject {
 	}
 
 	/**
-	 * @see DataValue::getSortKey
-	 *
-	 * @return int Always 0 in this implementation.
-	 */
-	public function getSortKey() {
-		return 0;
-	}
-
-	/**
 	 * Returns the value.
 	 * @see DataValue::getValue
 	 *

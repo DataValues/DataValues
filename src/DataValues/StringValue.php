@@ -50,15 +50,6 @@ class StringValue extends DataValueObject {
 	}
 
 	/**
-	 * @see DataValue::getSortKey
-	 *
-	 * @return string
-	 */
-	public function getSortKey() {
-		return $this->value;
-	}
-
-	/**
 	 * Returns the string.
 	 * @see DataValue::getValue
 	 *
