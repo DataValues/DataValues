@@ -1,9 +1,8 @@
 # DataValues
 
-DataValues is a small PHP library that aims to be a common foundation for representing "simple"
-values. Values such as booleans and strings.
+Small PHP library that provides interfaces for Value Objects. 
 
-It is part of the [DataValues set of libraries](https://github.com/DataValues).
+[Several libraries](https://github.com/DataValues) build on top of this foundation.
 
 [![Build Status](https://travis-ci.org/DataValues/DataValues.svg?branch=master)](https://travis-ci.org/DataValues/DataValues)
 [![Code Coverage](https://scrutinizer-ci.com/g/DataValues/DataValues/badges/coverage.png?s=56a1ea89df94c6d9b4223ba584d0d4556e1984ef)](https://scrutinizer-ci.com/g/DataValues/DataValues/)
