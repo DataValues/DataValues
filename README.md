@@ -51,11 +51,11 @@ For a full CI run
 
 ## Authors
 
-DataValues has been written primarily by [Jeroen De Dauw](https://github.com/JeroenDeDauw),
+DataValues has been written primarily by [Jeroen De Dauw](https://www.entropywins.wtf),
 in part as [Wikimedia Germany](https://wikimedia.de) employee for the [Wikidata project](https://wikidata.org/).
 
-Contributions where also made by [several other awesome people]
-(https://www.ohloh.net/p/datavalues/contributors).
+Contributions where also made by
+[several other awesome people](https://www.openhub.net/p/datavalues/contributors).
 
 ## Release notes
 
