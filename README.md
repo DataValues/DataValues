@@ -58,6 +58,10 @@ Contributions where also made by
 
 ## Release notes
 
+### 2.2.1 (2019-09-05)
+
+* Do not exclude test folder in releases since `DataValueTest` is being directly autoloaded
+
 ### 2.2.0 (2019-09-05)
 
 * Deprecated `DATAVALUES_VERSION` constant
