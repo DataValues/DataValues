@@ -58,7 +58,7 @@ Contributions where also made by
 
 ## Release notes
 
-### 2.2.0 (dev)
+### 2.2.0 (2019-09-05)
 
 * Deprecated `DATAVALUES_VERSION` constant
 
