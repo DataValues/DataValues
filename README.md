@@ -52,7 +52,7 @@ For a full CI run
 ## Authors
 
 DataValues has been written primarily by [Jeroen De Dauw](https://www.entropywins.wtf),
-in part as [Wikimedia Germany](https://wikimedia.de) employee for the [Wikidata project](https://wikidata.org/).
+in part for the [Wikidata project](https://wikidata.org/) and [Wikimedia Germany](https://wikimedia.de).
 
 Contributions where also made by
 [several other awesome people](https://www.openhub.net/p/datavalues/contributors).
