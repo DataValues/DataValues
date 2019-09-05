@@ -60,7 +60,7 @@ Contributions where also made by
 
 ### 2.2.1 (2019-09-05)
 
-* Do not exclude test folder in releases since `DataValueTest` is being directly autoloaded
+* Fixed `DataValueTest` not being part of the release
 
 ### 2.2.0 (2019-09-05)
 
