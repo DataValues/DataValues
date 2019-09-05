@@ -8,4 +8,4 @@ if ( defined( 'DATAVALUES_VERSION' ) ) {
 /**
  * @deprecated since 2.2. Removal in 3.0
  */
-define( 'DATAVALUES_VERSION', '2.2 alpha' );
+define( 'DATAVALUES_VERSION', '2.2' );
