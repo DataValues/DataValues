@@ -58,6 +58,10 @@ Contributions where also made by
 
 ## Release notes
 
+### 2.3.0 (2019-09-16)
+
+* `composer.json` and `phpunit.xml.dist` are now included in releases
+
 ### 2.2.1 (2019-09-05)
 
 * Fixed `DataValueTest` not being part of the release
