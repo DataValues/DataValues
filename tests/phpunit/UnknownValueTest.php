@@ -45,7 +45,7 @@ class UnknownValueTest extends DataValueTest {
 		];
 	}
 
-	public function testConstructorWithInvalidArguments() {
+	public function testConstructorWithInvalidArguments( ...$params ) {
 		// UnknownValue has no invalid arguments
 		$this->assertTrue( true );
 	}

@@ -18,10 +18,10 @@
 		}
 	],
 	"require": {
-		"php": ">=5.5.9"
+		"php": ">=7.2.0"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "~4.8",
+		"phpunit/phpunit": "~8.0",
 		"wikibase/wikibase-codesniffer": "^0.1.0"
 	},
 	"replace": {
