@@ -1,11 +1,24 @@
 <?xml version="1.0"?>
 <ruleset name="DataValuesDataValues">
+	<file>src/</file>
+	<file>tests/</file>
+
 	<rule ref="./vendor/wikibase/wikibase-codesniffer/Wikibase" />
+
+	<rule ref="Wikibase">
+		<exclude name="Wikibase.Commenting.ClassLevelDocumentation.Missing" />
+	</rule>
+
+	<rule ref="Generic.Files.LineLength">
+		<exclude name="Generic.Files.LineLength.TooLong" />
+	</rule>
 
 	<rule ref="Generic.Formatting.NoSpaceAfterCast" />
 	<rule ref="Generic.Metrics.CyclomaticComplexity" />
 	<rule ref="Generic.Metrics.NestingLevel" />
+	<rule ref="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment" />
 	<rule ref="Squiz.Operators.ValidLogicalOperators" />
+
 	<rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
 		<exclude-pattern>src/interfaces/</exclude-pattern>
 	</rule>
@@ -13,6 +26,11 @@
 		<exclude-pattern>DataValues</exclude-pattern>
 	</rule>
 
-	<file>.</file>
-	<exclude-pattern>node_modules</exclude-pattern>
+	<rule ref="Wikibase">
+		<exclude name="Wikibase.Commenting" />
+	</rule>
+
+	<rule ref="MediaWiki">
+		<exclude name="MediaWiki.Commenting" />
+	</rule>
 </ruleset>

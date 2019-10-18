@@ -7,11 +7,6 @@ namespace DataValues;
  *
  * More complex numeric values that have associated info such as
  * unit and accuracy can be represented with a {@see QuantityValue}.
- *
- * @since 0.1
- *
- * @license GPL-2.0+
- * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 class NumberValue extends DataValueObject {
 

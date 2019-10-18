@@ -5,13 +5,7 @@ namespace DataValues\Tests;
 use DataValues\BooleanValue;
 
 /**
- * @covers DataValues\BooleanValue
- *
- * @group DataValue
- * @group DataValueExtensions
- *
- * @license GPL-2.0+
- * @author Jeroen De Dauw < jeroendedauw@gmail.com >
+ * @covers \DataValues\BooleanValue
  */
 class BooleanValueTest extends DataValueTest {
 

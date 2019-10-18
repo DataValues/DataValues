@@ -1,13 +1,5 @@
 <?php
 
-/**
- * Interface for objects that have a getHash method.
- *
- * @since 0.1
- *
- * @license GPL-2.0+
- * @author Jeroen De Dauw < jeroendedauw@gmail.com >
- */
 interface Hashable {
 
 	/**

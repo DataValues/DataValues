@@ -11,14 +11,6 @@ use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 use Serializable;
 
-/**
- * Base for unit tests for DataValue implementing classes.
- *
- * @since 0.1
- *
- * @license GPL-2.0+
- * @author Jeroen De Dauw < jeroendedauw@gmail.com >
- */
 abstract class DataValueTest extends TestCase {
 
 	/**
