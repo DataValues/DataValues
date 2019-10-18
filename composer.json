@@ -28,20 +28,21 @@
 		"mediawiki/data-values": "*"
 	},
 	"autoload": {
-		"files" : [
-			"DataValues.php"
-		],
 		"classmap": [
-			"src/interfaces",
-			"tests/phpunit/DataValueTest.php"
+			"src/interfaces"
 		],
 		"psr-4": {
 			"DataValues\\": "src/DataValues/"
 		}
 	},
+	"autoload-dev": {
+		"classmap": [
+			"tests/phpunit/DataValueTest.php"
+		]
+	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "2.x-dev"
+			"dev-master": "3.x-dev"
 		}
 	},
 	"scripts": {
