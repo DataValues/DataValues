@@ -7,7 +7,7 @@ use DataValues\DataValue;
 use Exception;
 use Hashable;
 use Immutable;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 use Serializable;
 
@@ -19,7 +19,7 @@ use Serializable;
  * @license GPL-2.0+
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
-abstract class DataValueTest extends PHPUnit_Framework_TestCase {
+abstract class DataValueTest extends TestCase {
 
 	/**
 	 * Returns the name of the concrete class tested by this test.
@@ -54,12 +54,10 @@ abstract class DataValueTest extends PHPUnit_Framework_TestCase {
 	 * @return array [instance, constructor args]
 	 */
 	public function instanceProvider() {
-		$instanceBuilder = [ $this, 'newInstance' ];
-
 		return array_map(
-			function ( array $args ) use ( $instanceBuilder ) {
+			function ( array $args ) {
 				return [
-					call_user_func_array( $instanceBuilder, $args ),
+					$this->newInstance( ...$args ),
 					$args
 				];
 			},
@@ -73,10 +71,7 @@ abstract class DataValueTest extends PHPUnit_Framework_TestCase {
 	 * @since 0.1
 	 */
 	public function testConstructorWithValidArguments() {
-		$dataItem = call_user_func_array(
-			[ $this, 'newInstance' ],
-			func_get_args()
-		);
+		$dataItem = $this->newInstance( ...func_get_args() );
 
 		$this->assertInstanceOf( $this->getClass(), $dataItem );
 	}
@@ -87,12 +82,9 @@ abstract class DataValueTest extends PHPUnit_Framework_TestCase {
 	 * @since 0.1
 	 */
 	public function testConstructorWithInvalidArguments() {
-		$this->setExpectedException( Exception::class );
+		$this->expectException( Exception::class );
 
-		call_user_func_array(
-			[ $this, 'newInstance' ],
-			func_get_args()
-		);
+		$this->newInstance( ...func_get_args() );
 	}
 
 	/**
@@ -111,7 +103,7 @@ abstract class DataValueTest extends PHPUnit_Framework_TestCase {
 	 */
 	public function testGetType( DataValue $value, array $arguments ) {
 		$valueType = $value->getType();
-		$this->assertInternalType( 'string', $valueType );
+		$this->assertIsString( $valueType );
 		$this->assertTrue( strlen( $valueType ) > 0 );
 
 		// Check whether using getType statically returns the same as called from an instance:
@@ -124,7 +116,7 @@ abstract class DataValueTest extends PHPUnit_Framework_TestCase {
 	 */
 	public function testSerialization( DataValue $value, array $arguments ) {
 		$serialization = serialize( $value );
-		$this->assertInternalType( 'string', $serialization );
+		$this->assertIsString( $serialization );
 
 		$unserialized = unserialize( $serialization );
 		$this->assertInstanceOf( DataValue::class, $unserialized );
@@ -150,7 +142,7 @@ abstract class DataValueTest extends PHPUnit_Framework_TestCase {
 	public function testGetHash( DataValue $value, array $arguments ) {
 		$hash = $value->getHash();
 
-		$this->assertInternalType( 'string', $hash );
+		$this->assertIsString( $hash );
 		$this->assertEquals( $hash, $value->getHash() );
 		$this->assertEquals( $hash, $value->getCopy()->getHash() );
 	}
@@ -187,7 +179,7 @@ abstract class DataValueTest extends PHPUnit_Framework_TestCase {
 	public function testToArray( DataValue $value, array $arguments ) {
 		$array = $value->toArray();
 
-		$this->assertInternalType( 'array', $array );
+		$this->assertIsArray( $array );
 
 		$this->assertTrue( array_key_exists( 'type', $array ) );
 		$this->assertTrue( array_key_exists( 'value', $array ) );

@@ -76,7 +76,7 @@ class UnDeserializableValueTest extends DataValueTest {
 	public function testToArray( DataValue $value, array $arguments ) {
 		$array = $value->toArray();
 
-		$this->assertInternalType( 'array', $array );
+		$this->assertIsArray( $array );
 
 		$this->assertTrue( array_key_exists( 'type', $array ) );
 		$this->assertTrue( array_key_exists( 'value', $array ) );
