@@ -47,7 +47,7 @@
 	"scripts": {
 		"test": [
 			"composer validate --no-interaction",
-			"phpunit",
+			"vendor/bin/phpunit",
 			"@cs"
 		],
 		"cs": [
