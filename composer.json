@@ -28,9 +28,6 @@
 		"mediawiki/data-values": "*"
 	},
 	"autoload": {
-		"files" : [
-			"DataValues.php"
-		],
 		"classmap": [
 			"src/interfaces"
 		],
