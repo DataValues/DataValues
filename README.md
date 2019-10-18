@@ -58,6 +58,11 @@ Contributions where also made by
 
 ## Release notes
 
+### 3.0.0 (dev)
+
+* Removed `DataValueTest` (create a copy if you need it, though better refactor away the bad design)
+* Raised minimum PHP version from 5.5.9 to 7.2
+
 ### 2.3.0 (2019-09-16)
 
 * `composer.json` and `phpunit.xml.dist` are now included in releases
