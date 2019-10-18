@@ -5,13 +5,7 @@ namespace DataValues\Tests;
 use DataValues\UnknownValue;
 
 /**
- * @covers DataValues\UnknownValue
- *
- * @group DataValue
- * @group DataValueExtensions
- *
- * @license GPL-2.0+
- * @author Jeroen De Dauw < jeroendedauw@gmail.com >
+ * @covers \DataValues\UnknownValue
  */
 class UnknownValueTest extends DataValueTest {
 

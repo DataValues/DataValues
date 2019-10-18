@@ -9,9 +9,6 @@ use InvalidArgumentException;
  * It contains the raw native data structure representing the value,
  * as well as the originally intended value type and an error message.
  *
- * @since 0.1
- *
- * @license GPL-2.0+
  * @author Daniel Kinzler
  */
 class UnDeserializableValue extends DataValueObject {

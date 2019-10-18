@@ -2,14 +2,6 @@
 
 namespace DataValues;
 
-/**
- * Class representing a boolean value.
- *
- * @since 0.1
- *
- * @license GPL-2.0+
- * @author Jeroen De Dauw < jeroendedauw@gmail.com >
- */
 class BooleanValue extends DataValueObject {
 
 	private $value;

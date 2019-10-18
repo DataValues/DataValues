@@ -5,11 +5,6 @@ namespace DataValues;
 /**
  * Class representing a value of unknown type.
  * This is in essence a null-wrapper, useful for instance for null-parsers.
- *
- * @since 0.1
- *
- * @license GPL-2.0+
- * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 class UnknownValue extends DataValueObject {
 

@@ -9,11 +9,6 @@ use Serializable;
 
 /**
  * Interface for objects that represent a single data value.
- *
- * @since 0.1
- *
- * @license GPL-2.0+
- * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 interface DataValue extends Hashable, Comparable, Serializable, Immutable {
 

@@ -6,12 +6,7 @@ use DataValues\DataValue;
 use DataValues\UnDeserializableValue;
 
 /**
- * @covers DataValues\UnDeserializableValue
- *
- * @group DataValue
- * @group DataValueExtensions
- *
- * @license GPL-2.0+
+ * @covers \DataValues\UnDeserializableValue
  * @author Daniel Kinzler
  */
 class UnDeserializableValueTest extends DataValueTest {
