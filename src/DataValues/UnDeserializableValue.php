@@ -40,7 +40,7 @@ class UnDeserializableValue extends DataValueObject {
 			throw new InvalidArgumentException( '$data must not be an object' );
 		}
 
-		if ( !is_string( $type ) && !is_null( $type ) ) {
+		if ( !is_string( $type ) && $type !== null ) {
 			throw new InvalidArgumentException( '$type must be a string or null' );
 		}
 
