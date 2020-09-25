@@ -34,15 +34,6 @@ abstract class DataValueObject implements DataValue {
 	}
 
 	/**
-	 * @see DataValue::getCopy
-	 *
-	 * @return DataValue
-	 */
-	public function getCopy() {
-		return unserialize( serialize( $this ) );
-	}
-
-	/**
 	 * @see DataValue::getArrayValue
 	 *
 	 * @return mixed

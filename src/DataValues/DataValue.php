@@ -24,16 +24,6 @@ interface DataValue extends Hashable, Comparable, Serializable, Immutable {
 	public static function getType();
 
 	/**
-	 * Returns a key that can be used to sort the data value with.
-	 * It can be either numeric or a string.
-	 *
-	 * @since 0.1
-	 *
-	 * @return string|float|int
-	 */
-	public function getSortKey();
-
-	/**
 	 * Returns the value contained by the DataValue. If this value is not simple and
 	 * does not have it's own type that represents it, the DataValue itself will be returned.
 	 * In essence, this method returns the "simplest" representation of the value.
@@ -78,14 +68,5 @@ interface DataValue extends Hashable, Comparable, Serializable, Immutable {
 	 * @return array
 	 */
 	public function toArray();
-
-	/**
-	 * Returns a deep copy of the object.
-	 *
-	 * @since 0.1
-	 *
-	 * @return DataValue
-	 */
-	public function getCopy();
 
 }
