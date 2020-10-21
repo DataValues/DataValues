@@ -3,13 +3,12 @@
 namespace DataValues;
 
 use Comparable;
-use Immutable;
 use Serializable;
 
 /**
  * Interface for objects that represent a single data value.
  */
-interface DataValue extends Comparable, Serializable, Immutable {
+interface DataValue extends Comparable, Serializable {
 
 	/**
 	 * Returns the identifier of the datavalues type.
