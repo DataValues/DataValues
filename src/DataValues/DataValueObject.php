@@ -8,8 +8,6 @@ namespace DataValues;
 abstract class DataValueObject implements DataValue {
 
 	/**
-	 * @see Hashable::getHash
-	 *
 	 * @return string
 	 */
 	public function getHash() {
