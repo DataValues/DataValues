@@ -63,9 +63,9 @@ Contributions where also made by
 * Removed `getCopy` from the `DataValue` interface and all implementations
 * Removed `getSortKey` from the `DataValue` interface and all implementations
 * Removed `DATAVALUES_VERSION` constant
+* Removed the `Hashable` and `Immutable` interfaces
 * Removed `DataValueTest` (create a copy if you need it, though better refactor away the bad design)
 * Raised minimum PHP version from 5.5.9 to 7.2
-* Deprecated the `Hashable` and `Immutable` interfaces
 
 ### 2.3.0 (2019-09-16)
 
