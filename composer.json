@@ -28,9 +28,6 @@
 		"mediawiki/data-values": "*"
 	},
 	"autoload": {
-		"classmap": [
-			"src/interfaces"
-		],
 		"psr-4": {
 			"DataValues\\": "src/DataValues/"
 		}

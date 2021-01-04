@@ -2,13 +2,12 @@
 
 namespace DataValues;
 
-use Comparable;
 use Serializable;
 
 /**
  * Interface for objects that represent a single data value.
  */
-interface DataValue extends Comparable, Serializable {
+interface DataValue extends Serializable {
 
 	/**
 	 * Returns the identifier of the datavalues type.

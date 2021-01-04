@@ -15,8 +15,6 @@ abstract class DataValueObject implements DataValue {
 	}
 
 	/**
-	 * @see Comparable::equals
-	 *
 	 * @param mixed $target
 	 *
 	 * @return bool
