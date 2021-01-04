@@ -2,7 +2,6 @@
 
 namespace DataValues\Tests;
 
-use Comparable;
 use DataValues\DataValue;
 use Exception;
 use PHPUnit\Framework\TestCase;
@@ -81,7 +80,6 @@ abstract class DataValueTest extends TestCase {
 	 * @dataProvider instanceProvider
 	 */
 	public function testImplements( DataValue $value, array $arguments ) {
-		$this->assertInstanceOf( Comparable::class, $value );
 		$this->assertInstanceOf( Serializable::class, $value );
 		$this->assertInstanceOf( DataValue::class, $value );
 	}

@@ -142,8 +142,6 @@ class UnDeserializableValue extends DataValueObject {
 	}
 
 	/**
-	 * @see Comparable::equals
-	 *
 	 * @param mixed $target
 	 *
 	 * @return bool

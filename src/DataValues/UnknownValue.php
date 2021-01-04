@@ -58,8 +58,6 @@ class UnknownValue extends DataValueObject {
 	}
 
 	/**
-	 * @see Comparable::equals
-	 *
 	 * @param mixed $target
 	 *
 	 * @return bool
