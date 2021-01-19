@@ -1,8 +1,6 @@
 # DataValues
 
-Small PHP library that provides interfaces for Value Objects. 
-
-[Several libraries](https://github.com/DataValues) build on top of this foundation.
+Small PHP library that provides interfaces for Value Objects. [Several libraries](https://packagist.org/packages/data-values/data-values/dependents?order_by=downloads) build on top of this foundation.
 
 [![Code Coverage](https://scrutinizer-ci.com/g/DataValues/DataValues/badges/coverage.png?s=56a1ea89df94c6d9b4223ba584d0d4556e1984ef)](https://scrutinizer-ci.com/g/DataValues/DataValues/)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/DataValues/DataValues/badges/quality-score.png?s=ba9364790e6b521277a3829ffb91e2c2e1b68c3c)](https://scrutinizer-ci.com/g/DataValues/DataValues/)
