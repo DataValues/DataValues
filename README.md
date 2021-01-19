@@ -11,23 +11,17 @@ On [Packagist](https://packagist.org/packages/data-values/data-values):
 [![Latest Stable Version](https://poser.pugx.org/data-values/data-values/version.png)](https://packagist.org/packages/data-values/data-values)
 [![Download count](https://poser.pugx.org/data-values/data-values/d/total.png)](https://packagist.org/packages/data-values/data-values)
 
-## Requirements
-
-These PHP versions are supported:
-
-* PHP 7.2 or later
-
 ## Installation
 
 To add this package as a local, per-project dependency to your project, simply add a
 dependency on `data-values/data-values` to your project's `composer.json` file.
 Here is a minimal example of a `composer.json` file that just defines a dependency on
-DataValues 2.0:
+DataValues 3.x:
 
 ```json
     {
         "require": {
-            "data-values/data-values": "^2.0.0"
+            "data-values/data-values": "^3.0.0"
         }
     }
 ```
