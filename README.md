@@ -15,8 +15,7 @@ On [Packagist](https://packagist.org/packages/data-values/data-values):
 
 These PHP versions are supported:
 
-* PHP 5.5 or later, including PHP 7
-* HHVM 3.3 or later
+* PHP 7.2 or later
 
 ## Installation
 
@@ -57,7 +56,7 @@ Contributions where also made by
 
 ## Release notes
 
-### 3.0.0 (dev)
+### 3.0.0 (2021-01-19)
 
 * Removed `getCopy` from the `DataValue` interface and all implementations
 * Removed `getSortKey` from the `DataValue` interface and all implementations
