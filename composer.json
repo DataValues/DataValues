@@ -29,7 +29,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"DataValues\\": "src/DataValues/"
+			"DataValues\\": "src/"
 		}
 	},
 	"autoload-dev": {
