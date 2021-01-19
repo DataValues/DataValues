@@ -33,9 +33,9 @@
 		}
 	},
 	"autoload-dev": {
-		"classmap": [
-			"tests/phpunit/DataValueTest.php"
-		]
+		"psr-4": {
+			"DataValues\\Tests\\": "tests/phpunit/"
+		}
 	},
 	"extra": {
 		"branch-alias": {
