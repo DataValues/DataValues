@@ -3,12 +3,6 @@
 	<file>src/</file>
 	<file>tests/</file>
 
-	<rule ref="./vendor/wikibase/wikibase-codesniffer/Wikibase" />
-
-	<rule ref="Wikibase">
-		<exclude name="Wikibase.Commenting.ClassLevelDocumentation.Missing" />
-	</rule>
-
 	<rule ref="Generic.Files.LineLength">
 		<exclude name="Generic.Files.LineLength.TooLong" />
 	</rule>
@@ -16,7 +10,6 @@
 	<rule ref="Generic.Formatting.NoSpaceAfterCast" />
 	<rule ref="Generic.Metrics.CyclomaticComplexity" />
 	<rule ref="Generic.Metrics.NestingLevel" />
-	<rule ref="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment" />
 	<rule ref="Squiz.Operators.ValidLogicalOperators" />
 
 	<rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
@@ -26,11 +19,13 @@
 		<exclude-pattern>DataValues</exclude-pattern>
 	</rule>
 
-	<rule ref="Wikibase">
-		<exclude name="Wikibase.Commenting" />
-	</rule>
-
-	<rule ref="MediaWiki">
+	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
 		<exclude name="MediaWiki.Commenting" />
+		<exclude name="MediaWiki.PHPUnit" />
+		<exclude name="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment" />
+		<exclude name="MediaWiki.WhiteSpace.DisallowEmptyLineFunctions.NoEmptyLine" />
+		<exclude name="MediaWiki.WhiteSpace.SpaceAfterClosure.NoWhitespaceAfterClosure" />
+		<exclude name="MediaWiki.Classes.UnsortedUseStatements.UnsortedUse" />
+		<exclude name="MediaWiki.ControlStructures.IfElseStructure.SpaceBeforeElse" />
 	</rule>
 </ruleset>
