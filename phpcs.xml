@@ -3,12 +3,6 @@
 	<file>src/</file>
 	<file>tests/</file>
 
-	<rule ref="./vendor/wikibase/wikibase-codesniffer/Wikibase" />
-
-	<rule ref="Wikibase">
-		<exclude name="Wikibase.Commenting.ClassLevelDocumentation.Missing" />
-	</rule>
-
 	<rule ref="Generic.Files.LineLength">
 		<exclude name="Generic.Files.LineLength.TooLong" />
 	</rule>
@@ -24,10 +18,6 @@
 	</rule>
 	<rule ref="PSR1.Files.SideEffects">
 		<exclude-pattern>DataValues</exclude-pattern>
-	</rule>
-
-	<rule ref="Wikibase">
-		<exclude name="Wikibase.Commenting" />
 	</rule>
 
 	<rule ref="MediaWiki">
