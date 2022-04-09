@@ -21,6 +21,7 @@
 
 	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
 		<exclude name="MediaWiki.Commenting" />
+		<exclude name="MediaWiki.PHPUnit" />
 		<exclude name="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment" />
 		<exclude name="MediaWiki.WhiteSpace.DisallowEmptyLineFunctions.NoEmptyLine" />
 		<exclude name="MediaWiki.WhiteSpace.SpaceAfterClosure.NoWhitespaceAfterClosure" />
