@@ -10,7 +10,6 @@
 	<rule ref="Generic.Formatting.NoSpaceAfterCast" />
 	<rule ref="Generic.Metrics.CyclomaticComplexity" />
 	<rule ref="Generic.Metrics.NestingLevel" />
-	<rule ref="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment" />
 	<rule ref="Squiz.Operators.ValidLogicalOperators" />
 
 	<rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
