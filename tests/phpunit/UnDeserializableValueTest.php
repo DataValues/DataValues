@@ -87,4 +87,12 @@ class UnDeserializableValueTest extends DataValueTest {
 		$this->assertFalse( method_exists( $this->getClass(), 'newFromArray' ) );
 	}
 
+	public function testSerializationStability(): void {
+		$this->assertSame(
+			// Obtained with PHP 8.1.5, tested down to PHP 7.2
+			'C:32:"DataValues\UnDeserializableValue":49:{a:3:{i:0;N;i:1;N;i:2;s:19:"No type and no data";}}',
+			serialize( new UnDeserializableValue( null, null, 'No type and no data' ) )
+		);
+	}
+
 }
