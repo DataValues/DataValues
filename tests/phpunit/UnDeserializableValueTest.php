@@ -9,6 +9,7 @@ use DataValues\UnDeserializableValue;
 
 /**
  * @covers \DataValues\UnDeserializableValue
+ * @covers \DataValues\DataValueObject
  * @author Daniel Kinzler
  */
 class UnDeserializableValueTest extends DataValueTest {

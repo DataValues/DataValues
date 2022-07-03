@@ -8,6 +8,7 @@ use DataValues\StringValue;
 
 /**
  * @covers \DataValues\StringValue
+ * @covers \DataValues\DataValueObject
  */
 class StringValueTest extends DataValueTest {
 
