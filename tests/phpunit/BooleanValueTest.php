@@ -8,6 +8,7 @@ use DataValues\BooleanValue;
 
 /**
  * @covers \DataValues\BooleanValue
+ * @covers \DataValues\DataValueObject
  */
 class BooleanValueTest extends DataValueTest {
 

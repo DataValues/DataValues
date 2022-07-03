@@ -8,6 +8,7 @@ use DataValues\UnknownValue;
 
 /**
  * @covers \DataValues\UnknownValue
+ * @covers \DataValues\DataValueObject
  */
 class UnknownValueTest extends DataValueTest {
 

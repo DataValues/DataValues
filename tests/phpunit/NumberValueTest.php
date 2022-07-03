@@ -8,6 +8,7 @@ use DataValues\NumberValue;
 
 /**
  * @covers \DataValues\NumberValue
+ * @covers \DataValues\DataValueObject
  */
 class NumberValueTest extends DataValueTest {
 
