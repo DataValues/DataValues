@@ -53,4 +53,11 @@ class UnknownValueTest extends DataValueTest {
 		$this->assertEquals( $arguments[0], $value->getValue() );
 	}
 
+	public function testSerializationStability(): void {
+		$this->assertSame(
+			'C:23:"DataValues\UnknownValue":6:{a:0:{}}', // Obtained with PHP 8.1.5, tested down to PHP 7.2
+			serialize( new UnknownValue( [] ) )
+		);
+	}
+
 }
