@@ -67,6 +67,10 @@ class UnDeserializableValue extends DataValueObject {
 		return serialize( [ $this->type, $this->data, $this->error ] );
 	}
 
+	public function __serialize(): array {
+		return [ $this->data, $this->type, $this->error ];
+	}
+
 	/**
 	 * @see Serializable::unserialize
 	 *
@@ -75,6 +79,10 @@ class UnDeserializableValue extends DataValueObject {
 	public function unserialize( $value ) {
 		list( $type, $data, $error ) = unserialize( $value );
 		$this->__construct( $data, $type, $error );
+	}
+
+	public function __unserialize( array $data ): void {
+		$this->__construct( ...$data );
 	}
 
 	/**

@@ -39,6 +39,10 @@ class NumberValue extends DataValueObject {
 		return serialize( $this->value );
 	}
 
+	public function __serialize(): array {
+		return [ $this->value ];
+	}
+
 	/**
 	 * @see Serializable::unserialize
 	 *
@@ -46,6 +50,10 @@ class NumberValue extends DataValueObject {
 	 */
 	public function unserialize( $value ) {
 		$this->__construct( unserialize( $value ) );
+	}
+
+	public function __unserialize( array $data ): void {
+		$this->__construct( $data[0] );
 	}
 
 	/**

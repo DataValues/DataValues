@@ -30,6 +30,10 @@ class BooleanValue extends DataValueObject {
 		return $this->value ? '1' : '0';
 	}
 
+	public function __serialize(): array {
+		return [ $this->serialize() ];
+	}
+
 	/**
 	 * @see Serializable::unserialize
 	 *
@@ -37,6 +41,10 @@ class BooleanValue extends DataValueObject {
 	 */
 	public function unserialize( $value ) {
 		$this->value = $value === '1';
+	}
+
+	public function __unserialize( array $data ): void {
+		$this->unserialize( $data[ 0 ] );
 	}
 
 	/**

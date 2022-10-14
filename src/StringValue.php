@@ -33,6 +33,10 @@ class StringValue extends DataValueObject {
 		return $this->value;
 	}
 
+	public function __serialize(): array {
+		return [ $this->serialize() ];
+	}
+
 	/**
 	 * @see Serializable::unserialize
 	 *
@@ -40,6 +44,10 @@ class StringValue extends DataValueObject {
 	 */
 	public function unserialize( $value ) {
 		$this->__construct( $value );
+	}
+
+	public function __unserialize( array $data ): void {
+		$this->unserialize( $data[0] );
 	}
 
 	/**
