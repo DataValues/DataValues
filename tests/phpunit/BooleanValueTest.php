@@ -52,4 +52,21 @@ class BooleanValueTest extends DataValueTest {
 		$this->assertEquals( $arguments[0], $boolean->getValue() );
 	}
 
+	/** @dataProvider instanceWithHashProvider */
+	public function testGetHashStability( BooleanValue $string, string $hash ) {
+		$this->assertSame( $hash, $string->getHash() );
+	}
+
+	public function instanceWithHashProvider(): iterable {
+		// all hashes obtained from data-values/data-values==3.0.0 under PHP 7.2.34
+		yield 'true' => [
+			new BooleanValue( true ),
+			'8e4870384e54b7ba67b8da5ee127b274',
+		];
+		yield 'false' => [
+			new BooleanValue( false ),
+			'a3129f65af06a7c987ef5077ad3e9950',
+		];
+	}
+
 }
