@@ -50,16 +50,4 @@ class StringValueTest extends DataValueTest {
 		$this->assertEquals( $arguments[0], $string->getValue() );
 	}
 
-	public function testSerializationStability(): void {
-		$this->assertSame(
-			'C:22:"DataValues\StringValue":0:{}', // Obtained with PHP 8.1.5, tested down to PHP 7.2
-			serialize( new StringValue( '' ) )
-		);
-
-		$this->assertSame(
-			'C:22:"DataValues\StringValue":7:{pew pew}', // Obtained with PHP 8.1.5, tested down to PHP 7.2
-			serialize( new StringValue( 'pew pew' ) )
-		);
-	}
-
 }

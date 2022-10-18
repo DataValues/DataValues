@@ -58,16 +58,4 @@ class NumberValueTest extends DataValueTest {
 		$this->assertEquals( $arguments[0], $number->getValue() );
 	}
 
-	public function testSerializationStability(): void {
-		$this->assertSame(
-			'C:22:"DataValues\NumberValue":5:{i:42;}', // Obtained with PHP 8.1.5, tested down to PHP 7.2
-			serialize( new NumberValue( 42 ) )
-		);
-
-		$this->assertSame(
-			'C:22:"DataValues\NumberValue":7:{d:-4.2;}', // Obtained with PHP 8.1.5, tested down to PHP 7.2
-			serialize( new NumberValue( -4.2 ) )
-		);
-	}
-
 }
