@@ -19,7 +19,7 @@ DataValues 3.x:
 ```json
     {
         "require": {
-            "data-values/data-values": "^3.0.0"
+            "data-values/data-values": "^3.1.0"
         }
     }
 ```
@@ -47,6 +47,15 @@ Contributions where also made by
 [several other awesome people](https://www.openhub.net/p/datavalues/contributors).
 
 ## Release notes
+
+### 3.1.0 (2022-10-21)
+
+* Improved compatibility with PHP 8.1;
+  in particular, the new `__serialize`/`__unserialize` methods are implemented now
+  (in addition to the still supported `Serializable` interface).
+  Care has been taken to keep the output of `getHash()` stable;
+  if other classes include the PHP serialization of data values in their own hashes,
+  they should instead use the new `getSerializationForHash()` method where it exists.
 
 ### 3.0.0 (2021-01-19)
 
