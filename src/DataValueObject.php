@@ -13,7 +13,20 @@ abstract class DataValueObject implements DataValue {
 	 * @return string
 	 */
 	public function getHash() {
-		return md5( serialize( $this ) );
+		return md5( $this->getSerializationForHash() );
+	}
+
+	/**
+	 * Get legacy PHP serialization (as PHP up to version 7.3 would produce).
+	 * This is used for self::getHash to make sure hashes stay consistent.
+	 * It must not be used to produce serialization meant to be deserialized.
+	 *
+	 * @return string
+	 */
+	public function getSerializationForHash(): string {
+		$data = $this->serialize();
+		return 'C:' . strlen( static::class ) . ':"' . static::class .
+			'":' . strlen( $data ) . ':{' . $data . '}';
 	}
 
 	/**

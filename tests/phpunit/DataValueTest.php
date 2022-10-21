@@ -137,6 +137,20 @@ abstract class DataValueTest extends TestCase {
 	/**
 	 * @dataProvider instanceProvider
 	 */
+	public function testGetSerializationForHash( DataValue $value, array $arguments ) {
+		$serialization = $value->getSerializationForHash();
+
+		$this->assertTrue( $value->equals( unserialize( $serialization ) ) );
+		if ( version_compare( phpversion(), '7.4', '<' ) || !method_exists( $value, '__serialize' ) ) {
+			// If we run PHP 7.3 (or older), or $value doesn't yet have the __serialize method,
+			// the default PHP serialization should match our legacy format.
+			$this->assertSame( serialize( $value ), $serialization );
+		}
+	}
+
+	/**
+	 * @dataProvider instanceProvider
+	 */
 	public function testGetValueSimple( DataValue $value, array $arguments ) {
 		$value->getValue();
 		$this->assertTrue( true );

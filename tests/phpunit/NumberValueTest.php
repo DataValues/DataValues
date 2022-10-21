@@ -58,16 +58,29 @@ class NumberValueTest extends DataValueTest {
 		$this->assertEquals( $arguments[0], $number->getValue() );
 	}
 
-	public function testSerializationStability(): void {
-		$this->assertSame(
-			'C:22:"DataValues\NumberValue":5:{i:42;}', // Obtained with PHP 8.1.5, tested down to PHP 7.2
-			serialize( new NumberValue( 42 ) )
-		);
+	/** @dataProvider instanceWithHashProvider */
+	public function testGetHashStability( NumberValue $string, string $hash ) {
+		$this->assertSame( $hash, $string->getHash() );
+	}
 
-		$this->assertSame(
-			'C:22:"DataValues\NumberValue":7:{d:-4.2;}', // Obtained with PHP 8.1.5, tested down to PHP 7.2
-			serialize( new NumberValue( -4.2 ) )
-		);
+	public function instanceWithHashProvider(): iterable {
+		// all hashes obtained from data-values/data-values==3.0.0 under PHP 7.2.34
+		yield 'int 0' => [
+			new NumberValue( 0 ),
+			'81277795dbf8a1fd3d0251763ec31542',
+		];
+		yield 'int 1337' => [
+			new NumberValue( 1337 ),
+			'a458da273f208b6c0345061c84dc4edd',
+		];
+		yield 'float 0.0' => [
+			new NumberValue( 0.0 ),
+			'c750d1ddbacf64a45afaa2e71b24c381'
+		];
+		yield 'float 13.37' => [
+			new NumberValue( 13.37 ),
+			'f3f2807ccf5697277cf37176e3b9eb3d',
+		];
 	}
 
 }
