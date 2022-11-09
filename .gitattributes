@@ -3,3 +3,4 @@
 .gitignore export-ignore
 phpcs.xml export-ignore
 phpunit.xml.dist export-ignore
+tests/ export-ignore
