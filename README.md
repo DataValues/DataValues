@@ -2,12 +2,12 @@
 
 Small PHP library that provides interfaces for Value Objects. [Several libraries](https://packagist.org/packages/data-values/data-values/dependents?order_by=downloads) build on top of this foundation.
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/DataValues/DataValues/CI)](https://github.com/DataValues/DataValues/actions?query=workflow%3ACI)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/DataValues/DataValues/php.yml?branch=master)](https://github.com/DataValues/DataValues/actions?query=workflow%3Aphp)
 [![codecov](https://codecov.io/gh/DataValues/DataValues/branch/master/graph/badge.svg?token=GnOG3FF16Z)](https://codecov.io/gh/DataValues/DataValues)
 
-On [Packagist](https://packagist.org/packages/data-values/data-values):
-[![Latest Stable Version](https://poser.pugx.org/data-values/data-values/version.png)](https://packagist.org/packages/data-values/data-values)
-[![Download count](https://poser.pugx.org/data-values/data-values/d/total.png)](https://packagist.org/packages/data-values/data-values)
+On [Packagist](https://packagist.org/packages/data-values/geo):
+[![Latest Stable Version](https://poser.pugx.org/data-values/data-values/v/stable)](https://packagist.org/packages/data-values/data-values)
+[![Download count](https://poser.pugx.org/data-values/data-values/downloads)](https://packagist.org/packages/data-values/data-values)
 
 ## Installation
 
