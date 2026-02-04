@@ -48,6 +48,10 @@ Contributions where also made by
 
 ## Release notes
 
+### 3.1.1 (2026-06-04)
+
+* Added `tests/` directory to git export-ignore
+
 ### 3.1.0 (2022-10-21)
 
 * Improved compatibility with PHP 8.1;
